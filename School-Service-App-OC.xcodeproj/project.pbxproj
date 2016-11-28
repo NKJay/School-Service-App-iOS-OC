@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
+		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
+		E9E703D61DEC417900F5C042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D51DEC417900F5C042 /* ViewController.m */; };
+		E9E703D91DEC417900F5C042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703D71DEC417900F5C042 /* Main.storyboard */; };
+		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
+		E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DD1DEC417900F5C042 /* Assets.xcassets */; };
+		E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */; };
+		E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */; };
+		E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9E703E81DEC417900F5C042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E703C31DEC417800F5C042 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E703CA1DEC417800F5C042;
+			remoteInfo = "School-Service-App-OC";
+		};
+		E9E703F31DEC417900F5C042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9E703C31DEC417800F5C042 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9E703CA1DEC417800F5C042;
+			remoteInfo = "School-Service-App-OC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9E703D21DEC417800F5C042 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9E703D41DEC417800F5C042 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9E703D51DEC417900F5C042 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9E703D81DEC417900F5C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9E703DB1DEC417900F5C042 /* School_Service_App_OC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = School_Service_App_OC.xcdatamodel; sourceTree = "<group>"; };
+		E9E703DD1DEC417900F5C042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9E703E01DEC417900F5C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9E703E21DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E703E71DEC417900F5C042 /* School-Service-App-OCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCTests.m; sourceTree = "<group>"; };
+		E9E703ED1DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCUITests.m; sourceTree = "<group>"; };
+		E9E703F81DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E703C81DEC417800F5C042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703E41DEC417900F5C042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703EF1DEC417900F5C042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9E703C21DEC417800F5C042 = {
+			isa = PBXGroup;
+			children = (
+				E9E703CD1DEC417800F5C042 /* School-Service-App-OC */,
+				E9E703EA1DEC417900F5C042 /* School-Service-App-OCTests */,
+				E9E703F51DEC417900F5C042 /* School-Service-App-OCUITests */,
+				E9E703CC1DEC417800F5C042 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9E703CC1DEC417800F5C042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */,
+				E9E703E71DEC417900F5C042 /* School-Service-App-OCTests.xctest */,
+				E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9E703CD1DEC417800F5C042 /* School-Service-App-OC */ = {
+			isa = PBXGroup;
+			children = (
+				E9E703D11DEC417800F5C042 /* AppDelegate.h */,
+				E9E703D21DEC417800F5C042 /* AppDelegate.m */,
+				E9E703D41DEC417800F5C042 /* ViewController.h */,
+				E9E703D51DEC417900F5C042 /* ViewController.m */,
+				E9E703D71DEC417900F5C042 /* Main.storyboard */,
+				E9E703DD1DEC417900F5C042 /* Assets.xcassets */,
+				E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */,
+				E9E703E21DEC417900F5C042 /* Info.plist */,
+				E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */,
+				E9E703CE1DEC417800F5C042 /* Supporting Files */,
+			);
+			path = "School-Service-App-OC";
+			sourceTree = "<group>";
+		};
+		E9E703CE1DEC417800F5C042 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9E703CF1DEC417800F5C042 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9E703EA1DEC417900F5C042 /* School-Service-App-OCTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */,
+				E9E703ED1DEC417900F5C042 /* Info.plist */,
+			);
+			path = "School-Service-App-OCTests";
+			sourceTree = "<group>";
+		};
+		E9E703F51DEC417900F5C042 /* School-Service-App-OCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */,
+				E9E703F81DEC417900F5C042 /* Info.plist */,
+			);
+			path = "School-Service-App-OCUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9E703CA1DEC417800F5C042 /* School-Service-App-OC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E703FB1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OC" */;
+			buildPhases = (
+				E9E703C71DEC417800F5C042 /* Sources */,
+				E9E703C81DEC417800F5C042 /* Frameworks */,
+				E9E703C91DEC417800F5C042 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "School-Service-App-OC";
+			productName = "School-Service-App-OC";
+			productReference = E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9E703E61DEC417900F5C042 /* School-Service-App-OCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E703FE1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCTests" */;
+			buildPhases = (
+				E9E703E31DEC417900F5C042 /* Sources */,
+				E9E703E41DEC417900F5C042 /* Frameworks */,
+				E9E703E51DEC417900F5C042 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E703E91DEC417900F5C042 /* PBXTargetDependency */,
+			);
+			name = "School-Service-App-OCTests";
+			productName = "School-Service-App-OCTests";
+			productReference = E9E703E71DEC417900F5C042 /* School-Service-App-OCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9E703F11DEC417900F5C042 /* School-Service-App-OCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9E704011DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCUITests" */;
+			buildPhases = (
+				E9E703EE1DEC417900F5C042 /* Sources */,
+				E9E703EF1DEC417900F5C042 /* Frameworks */,
+				E9E703F01DEC417900F5C042 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9E703F41DEC417900F5C042 /* PBXTargetDependency */,
+			);
+			name = "School-Service-App-OCUITests";
+			productName = "School-Service-App-OCUITests";
+			productReference = E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9E703C31DEC417800F5C042 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = NKjay;
+				TargetAttributes = {
+					E9E703CA1DEC417800F5C042 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E9E703E61DEC417900F5C042 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9E703CA1DEC417800F5C042;
+					};
+					E9E703F11DEC417900F5C042 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E9E703CA1DEC417800F5C042;
+					};
+				};
+			};
+			buildConfigurationList = E9E703C61DEC417800F5C042 /* Build configuration list for PBXProject "School-Service-App-OC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9E703C21DEC417800F5C042;
+			productRefGroup = E9E703CC1DEC417800F5C042 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9E703CA1DEC417800F5C042 /* School-Service-App-OC */,
+				E9E703E61DEC417900F5C042 /* School-Service-App-OCTests */,
+				E9E703F11DEC417900F5C042 /* School-Service-App-OCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9E703C91DEC417800F5C042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
+				E9E703D91DEC417900F5C042 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703E51DEC417900F5C042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703F01DEC417900F5C042 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9E703C71DEC417800F5C042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E703D61DEC417900F5C042 /* ViewController.m in Sources */,
+				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
+				E9E703D01DEC417800F5C042 /* main.m in Sources */,
+				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703E31DEC417900F5C042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9E703EE1DEC417900F5C042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9E703E91DEC417900F5C042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E703CA1DEC417800F5C042 /* School-Service-App-OC */;
+			targetProxy = E9E703E81DEC417900F5C042 /* PBXContainerItemProxy */;
+		};
+		E9E703F41DEC417900F5C042 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9E703CA1DEC417800F5C042 /* School-Service-App-OC */;
+			targetProxy = E9E703F31DEC417900F5C042 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9E703D71DEC417900F5C042 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E703D81DEC417900F5C042 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E703E01DEC417900F5C042 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9E703F91DEC417900F5C042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9E703FA1DEC417900F5C042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9E703FC1DEC417900F5C042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9E703FD1DEC417900F5C042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9E703FF1DEC417900F5C042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "School-Service-App-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/School-Service-App-OC.app/School-Service-App-OC";
+			};
+			name = Debug;
+		};
+		E9E704001DEC417900F5C042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "School-Service-App-OCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/School-Service-App-OC.app/School-Service-App-OC";
+			};
+			name = Release;
+		};
+		E9E704021DEC417900F5C042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "School-Service-App-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "School-Service-App-OC";
+			};
+			name = Debug;
+		};
+		E9E704031DEC417900F5C042 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "School-Service-App-OCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "School-Service-App-OC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9E703C61DEC417800F5C042 /* Build configuration list for PBXProject "School-Service-App-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E703F91DEC417900F5C042 /* Debug */,
+				E9E703FA1DEC417900F5C042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9E703FB1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E703FC1DEC417900F5C042 /* Debug */,
+				E9E703FD1DEC417900F5C042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9E703FE1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E703FF1DEC417900F5C042 /* Debug */,
+				E9E704001DEC417900F5C042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9E704011DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E704021DEC417900F5C042 /* Debug */,
+				E9E704031DEC417900F5C042 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9E703DB1DEC417900F5C042 /* School_Service_App_OC.xcdatamodel */,
+			);
+			currentVersion = E9E703DB1DEC417900F5C042 /* School_Service_App_OC.xcdatamodel */;
+			path = School_Service_App_OC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E9E703C31DEC417800F5C042 /* Project object */;
+}
