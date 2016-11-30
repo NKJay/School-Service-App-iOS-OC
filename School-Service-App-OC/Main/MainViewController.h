@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  School-Service-App-OC
 //
 //  Created by NKjay on 2016/11/28.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end
-

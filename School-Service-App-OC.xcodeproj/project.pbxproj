@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
+		E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
-		E9E703D61DEC417900F5C042 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D51DEC417900F5C042 /* ViewController.m */; };
-		E9E703D91DEC417900F5C042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703D71DEC417900F5C042 /* Main.storyboard */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
 		E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DD1DEC417900F5C042 /* Assets.xcassets */; };
 		E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */; };
 		E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */; };
 		E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */; };
+		E9E704081DEC41DE00F5C042 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E704071DEC41DE00F5C042 /* MainViewController.m */; };
+		E9E704131DEC42F300F5C042 /* LessonCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.release.xcconfig"; sourceTree = "<group>"; };
+		27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_School_Service_App_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_DefaultColor.h; sourceTree = "<group>"; };
+		E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_DefaultColor.m; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E9E703D21DEC417800F5C042 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E9E703D41DEC417800F5C042 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E9E703D51DEC417900F5C042 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E9E703D81DEC417900F5C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9E703DB1DEC417900F5C042 /* School_Service_App_OC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = School_Service_App_OC.xcdatamodel; sourceTree = "<group>"; };
 		E9E703DD1DEC417900F5C042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E703E01DEC417900F5C042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,10 @@
 		E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCUITests.m; sourceTree = "<group>"; };
 		E9E703F81DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9E704061DEC41DE00F5C042 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E9E704071DEC41DE00F5C042 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E9E704101DEC42F300F5C042 /* LessonCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCellTableViewCell.h; sourceTree = "<group>"; };
+		E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2E2EBF365020407EFB3890 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */,
+				1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9414093BFFE9620AB91C3C4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E911E1681DEEF2CD008A1A05 /* Catagory */ = {
+			isa = PBXGroup;
+			children = (
+				E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */,
+				E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */,
+			);
+			path = Catagory;
+			sourceTree = "<group>";
+		};
 		E9E703C21DEC417800F5C042 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +122,8 @@
 				E9E703EA1DEC417900F5C042 /* School-Service-App-OCTests */,
 				E9E703F51DEC417900F5C042 /* School-Service-App-OCUITests */,
 				E9E703CC1DEC417800F5C042 /* Products */,
+				7B2E2EBF365020407EFB3890 /* Pods */,
+				9414093BFFE9620AB91C3C4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +140,11 @@
 		E9E703CD1DEC417800F5C042 /* School-Service-App-OC */ = {
 			isa = PBXGroup;
 			children = (
+				E911E1681DEEF2CD008A1A05 /* Catagory */,
+				E9E704041DEC41C600F5C042 /* Model */,
+				E9E704051DEC41C600F5C042 /* Main */,
 				E9E703D11DEC417800F5C042 /* AppDelegate.h */,
 				E9E703D21DEC417800F5C042 /* AppDelegate.m */,
-				E9E703D41DEC417800F5C042 /* ViewController.h */,
-				E9E703D51DEC417900F5C042 /* ViewController.m */,
-				E9E703D71DEC417900F5C042 /* Main.storyboard */,
 				E9E703DD1DEC417900F5C042 /* Assets.xcassets */,
 				E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */,
 				E9E703E21DEC417900F5C042 /* Info.plist */,
@@ -143,6 +180,32 @@
 			path = "School-Service-App-OCUITests";
 			sourceTree = "<group>";
 		};
+		E9E704041DEC41C600F5C042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9E704051DEC41C600F5C042 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E9E7040F1DEC42D400F5C042 /* CustomView */,
+				E9E704061DEC41DE00F5C042 /* MainViewController.h */,
+				E9E704071DEC41DE00F5C042 /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E9E7040F1DEC42D400F5C042 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E704101DEC42F300F5C042 /* LessonCellTableViewCell.h */,
+				E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9E703FB1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OC" */;
 			buildPhases = (
+				3EBC61951CE2B2EC30092D40 /* [CP] Check Pods Manifest.lock */,
 				E9E703C71DEC417800F5C042 /* Sources */,
 				E9E703C81DEC417800F5C042 /* Frameworks */,
 				E9E703C91DEC417800F5C042 /* Resources */,
+				2E390EEF76D389623F616D0B /* [CP] Embed Pods Frameworks */,
+				3CCC33D97D49AE40F85D8742 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,7 +317,6 @@
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
-				E9E703D91DEC417900F5C042 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,15 +336,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E390EEF76D389623F616D0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CCC33D97D49AE40F85D8742 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBC61951CE2B2EC30092D40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9E703C71DEC417800F5C042 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E703D61DEC417900F5C042 /* ViewController.m in Sources */,
+				E9E704131DEC42F300F5C042 /* LessonCellTableViewCell.m in Sources */,
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
+				E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */,
+				E9E704081DEC41DE00F5C042 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +430,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9E703D71DEC417900F5C042 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E9E703D81DEC417900F5C042 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -424,6 +531,7 @@
 		};
 		E9E703FC1DEC417900F5C042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
@@ -435,6 +543,7 @@
 		};
 		E9E703FD1DEC417900F5C042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
@@ -509,6 +618,7 @@
 				E9E703FD1DEC417900F5C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E703FE1DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +627,7 @@
 				E9E704001DEC417900F5C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E704011DEC417900F5C042 /* Build configuration list for PBXNativeTarget "School-Service-App-OCUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +636,7 @@
 				E9E704031DEC417900F5C042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
