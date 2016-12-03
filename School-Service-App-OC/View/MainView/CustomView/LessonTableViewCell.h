@@ -10,7 +10,7 @@
 #import "Lesson+CoreDataProperties.h"
 #import "Lesson+CoreDataClass.h"
 
-@interface LessonCellTableViewCell : UITableViewCell
+@interface LessonTableViewCell : UITableViewCell
 
 @property(strong,nonatomic)Lesson *lesson;
 @property(nonatomic,strong)NSIndexPath *indexPath;

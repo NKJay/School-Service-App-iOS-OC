@@ -6,9 +6,9 @@
 //  Copyright © 2016年 NKjay. All rights reserved.
 //
 
-#import "LessonCellTableViewCell.h"
+#import "LessonTableViewCell.h"
 
-@interface LessonCellTableViewCell()
+@interface LessonTableViewCell()
 @property(nonatomic,strong)UILabel *subjectLabel;
 @property(nonatomic,strong)UIView *decorationDot;
 @property(nonatomic,weak)NSArray *dotColor;
@@ -16,12 +16,14 @@
 
 @end
 
-@implementation LessonCellTableViewCell
+@implementation LessonTableViewCell
 
 -(UILabel *)subjectLabel{
-    UILabel *label = [[UILabel alloc] init];
-    label.text = _lesson.subject;
-    return label;
+    if (!_subjectLabel) {
+        _subjectLabel = [[UILabel alloc] init];
+        _subjectLabel.text = _lesson.subject;
+    }
+    return _subjectLabel;
 }
 
 -(NSArray*)dotColor{
@@ -35,13 +37,14 @@
 
 -(UIView*) decorationDot{
     UIView *view = [[UIView alloc] init];
-    view.backgroundColor = _wasSelected ? _dotColor[_indexPath.item % 6] : [UIColor whiteColor];
-    view.layer.borderColor = (__bridge CGColorRef _Nullable)(_dotColor[_indexPath.item % 6]);
+    view.backgroundColor = self.wasSelected ? self.dotColor[self.indexPath.item % 6] : [UIColor whiteColor];
+    view.layer.borderColor = (__bridge CGColorRef _Nullable)(self.dotColor[_indexPath.item % 6]);
     return view;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }
+
 
 @end

@@ -20,7 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self enterRootView];
     return YES;
+}
+
+- (void)setupNavBarAppearance{
+    [UINavigationBar appearance].backgroundColor = [UIColor whiteColor];
+    [UINavigationBar appearance].translucent = true;
 }
 
 -(void)enterRootView {

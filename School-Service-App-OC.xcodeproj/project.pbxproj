@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */; };
+		E92226331DF291DB00A1B808 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */; };
+		E92226341DF291DB00A1B808 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226301DF291DB00A1B808 /* MainView.m */; };
+		E92226351DF291DB00A1B808 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226321DF291DB00A1B808 /* MainViewController.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
@@ -16,8 +19,6 @@
 		E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */; };
 		E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */; };
 		E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */; };
-		E9E704081DEC41DE00F5C042 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E704071DEC41DE00F5C042 /* MainViewController.m */; };
-		E9E704131DEC42F300F5C042 /* LessonCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,12 @@
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_DefaultColor.h; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_DefaultColor.m; sourceTree = "<group>"; };
+		E922262D1DF291DB00A1B808 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
+		E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
+		E922262F1DF291DB00A1B808 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		E92226301DF291DB00A1B808 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		E92226311DF291DB00A1B808 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E92226321DF291DB00A1B808 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,10 +64,6 @@
 		E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCUITests.m; sourceTree = "<group>"; };
 		E9E703F81DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9E704061DEC41DE00F5C042 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		E9E704071DEC41DE00F5C042 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E9E704101DEC42F300F5C042 /* LessonCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonCellTableViewCell.h; sourceTree = "<group>"; };
-		E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,35 @@
 			path = Catagory;
 			sourceTree = "<group>";
 		};
+		E922262A1DF291DB00A1B808 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E922262B1DF291DB00A1B808 /* MainView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E922262B1DF291DB00A1B808 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E922262C1DF291DB00A1B808 /* CustomView */,
+				E922262F1DF291DB00A1B808 /* MainView.h */,
+				E92226301DF291DB00A1B808 /* MainView.m */,
+				E92226311DF291DB00A1B808 /* MainViewController.h */,
+				E92226321DF291DB00A1B808 /* MainViewController.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		E922262C1DF291DB00A1B808 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E922262D1DF291DB00A1B808 /* LessonTableViewCell.h */,
+				E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		E9E703C21DEC417800F5C042 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +172,9 @@
 		E9E703CD1DEC417800F5C042 /* School-Service-App-OC */ = {
 			isa = PBXGroup;
 			children = (
+				E922262A1DF291DB00A1B808 /* View */,
 				E911E1681DEEF2CD008A1A05 /* Catagory */,
 				E9E704041DEC41C600F5C042 /* Model */,
-				E9E704051DEC41C600F5C042 /* Main */,
 				E9E703D11DEC417800F5C042 /* AppDelegate.h */,
 				E9E703D21DEC417800F5C042 /* AppDelegate.m */,
 				E9E703DD1DEC417900F5C042 /* Assets.xcassets */,
@@ -185,25 +217,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E9E704051DEC41C600F5C042 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				E9E7040F1DEC42D400F5C042 /* CustomView */,
-				E9E704061DEC41DE00F5C042 /* MainViewController.h */,
-				E9E704071DEC41DE00F5C042 /* MainViewController.m */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		E9E7040F1DEC42D400F5C042 /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-				E9E704101DEC42F300F5C042 /* LessonCellTableViewCell.h */,
-				E9E704111DEC42F300F5C042 /* LessonCellTableViewCell.m */,
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,12 +402,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E704131DEC42F300F5C042 /* LessonCellTableViewCell.m in Sources */,
+				E92226331DF291DB00A1B808 /* LessonTableViewCell.m in Sources */,
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
+				E92226351DF291DB00A1B808 /* MainViewController.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */,
-				E9E704081DEC41DE00F5C042 /* MainViewController.m in Sources */,
+				E92226341DF291DB00A1B808 /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
