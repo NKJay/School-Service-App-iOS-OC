@@ -7,13 +7,12 @@
 //
 
 #import "MainViewController.h"
-#import "MainView.h"
 #import "LessonTableViewCell.h"
 
 @interface MainViewController()
-@property(nonatomic,weak) NSArray* lessons;
-@property(nonatomic,weak) NSMutableArray* news;
-@property(nonatomic,strong) MainView* mainView;
+@property(weak,nonatomic) NSArray* lessons;
+@property(weak,nonatomic) NSMutableArray* news;
+@property(assign,nonatomic) CGFloat screanHeight;
 @end
 
 @implementation MainViewController
@@ -38,34 +37,24 @@
     
 }
 
-- (void)loadView{
-    [super loadView];
-    self.view = self.mainView;
-}
 
 #pragma mark 懒加载
--(MainView *)mainView{
-    if (!_mainView) {
-        _mainView = [[MainView alloc] init];
-        _mainView.tableView.delegate = self;
-        _mainView.tableView.dataSource = self;
-    }
-    return _mainView;
-}
+
 
 #pragma mark tableView dataSource&delegate
+
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  indexPath.section == 0 ? 213.0 : 274.0;
+    return  indexPath.section == 0 ? 60.0 : 117.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return section == 0 ? 5 : _news.count;
+    return section == 0 ? 5 : self.news.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         LessonTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"lessonCell"];
-        cell.indexPath = indexPath;
+        cell.position = indexPath.item;
         return cell;
     } else{
         LessonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];

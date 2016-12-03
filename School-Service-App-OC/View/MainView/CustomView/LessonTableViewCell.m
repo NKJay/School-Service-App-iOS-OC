@@ -7,6 +7,7 @@
 //
 
 #import "LessonTableViewCell.h"
+#import "UIColor_DefaultColor.h"
 
 @interface LessonTableViewCell()
 @property(nonatomic,strong)UILabel *subjectLabel;
@@ -27,18 +28,14 @@
 }
 
 -(NSArray*)dotColor{
-    return @[[UIColor colorWithRed:0.99 green:0.17 blue:0.19 alpha:1.00],
-             [UIColor colorWithRed:0.99 green:0.08 blue:0.50 alpha:1.00],
-             [UIColor colorWithRed:0.99 green:0.45 blue:0.21 alpha:1.00],
-             [UIColor colorWithRed:0.99 green:0.72 blue:0.17 alpha:1.00],
-             [UIColor colorWithRed:0.35 green:0.79 blue:0.83 alpha:1.00],
-             [UIColor colorWithRed:0.24 green:0.84 blue:0.27 alpha:1.00]];
+    return [UIColor defaultColor];
 }
 
 -(UIView*) decorationDot{
     UIView *view = [[UIView alloc] init];
-    view.backgroundColor = self.wasSelected ? self.dotColor[self.indexPath.item % 6] : [UIColor whiteColor];
-    view.layer.borderColor = (__bridge CGColorRef _Nullable)(self.dotColor[_indexPath.item % 6]);
+    UIColor *currentColor = self.dotColor[(self.position % 6)];
+    view.backgroundColor = self.wasSelected ? currentColor : [UIColor whiteColor];
+    view.layer.borderColor = (__bridge CGColorRef _Nullable)currentColor;
     return view;
 }
 

@@ -10,7 +10,7 @@
 
 @implementation UIColor(DefaultColor)
 
-+(NSArray*)DefaultColor{
++(NSArray*)defaultColor{
     return @[[UIColor colorWithRed:0.99 green:0.17 blue:0.19 alpha:1.00],
              [UIColor colorWithRed:0.99 green:0.08 blue:0.50 alpha:1.00],
              [UIColor colorWithRed:0.99 green:0.45 blue:0.21 alpha:1.00],

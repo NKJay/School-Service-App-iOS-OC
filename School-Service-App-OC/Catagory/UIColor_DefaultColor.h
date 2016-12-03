@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor(DefaultColor)
-+(NSArray*)DefaultColor;
++(NSArray*)defaultColor;
 @end

@@ -10,8 +10,8 @@
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */; };
 		E92226331DF291DB00A1B808 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */; };
-		E92226341DF291DB00A1B808 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226301DF291DB00A1B808 /* MainView.m */; };
 		E92226351DF291DB00A1B808 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226321DF291DB00A1B808 /* MainViewController.m */; };
+		E92226371DF2BDAF00A1B808 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92226361DF2BDAE00A1B808 /* MainView.storyboard */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
@@ -46,10 +46,9 @@
 		E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_DefaultColor.m; sourceTree = "<group>"; };
 		E922262D1DF291DB00A1B808 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
 		E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
-		E922262F1DF291DB00A1B808 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
-		E92226301DF291DB00A1B808 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		E92226311DF291DB00A1B808 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E92226321DF291DB00A1B808 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E92226361DF2BDAE00A1B808 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,10 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				E922262C1DF291DB00A1B808 /* CustomView */,
-				E922262F1DF291DB00A1B808 /* MainView.h */,
-				E92226301DF291DB00A1B808 /* MainView.m */,
 				E92226311DF291DB00A1B808 /* MainViewController.h */,
 				E92226321DF291DB00A1B808 /* MainViewController.m */,
+				E92226361DF2BDAE00A1B808 /* MainView.storyboard */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -329,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E92226371DF2BDAF00A1B808 /* MainView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,7 +407,6 @@
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
 				E92226351DF291DB00A1B808 /* MainViewController.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */,
-				E92226341DF291DB00A1B808 /* MainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +471,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -520,6 +519,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -547,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
