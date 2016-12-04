@@ -7,11 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 
-@interface AppDelegate (){
-//    MainViewController *mv;
-}
+@interface AppDelegate ()
 
 @end
 
@@ -32,7 +29,7 @@
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    MainViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateInitialViewController];
+    UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateInitialViewController];
     self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];
 }

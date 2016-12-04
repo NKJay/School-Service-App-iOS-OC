@@ -8,11 +8,14 @@
 
 #import "MainViewController.h"
 #import "LessonTableViewCell.h"
+#import "MenuViewController.h"
+#import "MenuViewAnimationDelegate.h"
 
 @interface MainViewController()
 @property(weak,nonatomic) NSArray* lessons;
 @property(weak,nonatomic) NSMutableArray* news;
 @property(assign,nonatomic) CGFloat screanHeight;
+@property(strong,nonatomic) MenuViewAnimationDelegate *animationDelegate;
 @end
 
 @implementation MainViewController
@@ -22,20 +25,13 @@
     // Do any additional setup after loading the view.
 }
 
-
-- (void)setupNavBar{
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonDidClick)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:nil style:
-                                              UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonDidClick)];
+- (IBAction)leftBarButtonDidClick:(id)sender {
+    UIViewController *menuViewController = [[UIStoryboard storyboardWithName:@"MenuView" bundle:nil] instantiateInitialViewController];
+    menuViewController.transitioningDelegate = self.animationDelegate;
+    menuViewController.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:menuViewController animated:true completion:nil];
 }
 
-- (void)leftBarButtonDidClick{
-    
-}
-
-- (void)rightBarButtonDidClick{
-    
-}
 
 
 #pragma mark 懒加载

@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */; };
-		E92226331DF291DB00A1B808 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */; };
-		E92226351DF291DB00A1B808 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226321DF291DB00A1B808 /* MainViewController.m */; };
-		E92226371DF2BDAF00A1B808 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92226361DF2BDAE00A1B808 /* MainView.storyboard */; };
+		E922264D1DF3091700A1B808 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226451DF3091700A1B808 /* LessonTableViewCell.m */; };
+		E922264E1DF3091700A1B808 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92226461DF3091700A1B808 /* MainView.storyboard */; };
+		E922264F1DF3091700A1B808 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226481DF3091700A1B808 /* MainViewController.m */; };
+		E92226501DF3091700A1B808 /* MenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E922264A1DF3091700A1B808 /* MenuView.storyboard */; };
+		E92226511DF3091700A1B808 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E922264C1DF3091700A1B808 /* MenuViewController.m */; };
+		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
+		E9A0ADA31DF3E85400DDEEBE /* MenuViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */; };
+		E9A0ADA61DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */; };
+		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
@@ -44,11 +50,23 @@
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_DefaultColor.h; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_DefaultColor.m; sourceTree = "<group>"; };
-		E922262D1DF291DB00A1B808 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
-		E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
-		E92226311DF291DB00A1B808 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		E92226321DF291DB00A1B808 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E92226361DF2BDAE00A1B808 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
+		E92226441DF3091700A1B808 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
+		E92226451DF3091700A1B808 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
+		E92226461DF3091700A1B808 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		E92226471DF3091700A1B808 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E92226481DF3091700A1B808 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E922264A1DF3091700A1B808 /* MenuView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuView.storyboard; sourceTree = "<group>"; };
+		E922264B1DF3091700A1B808 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		E922264C1DF3091700A1B808 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		E92226531DF3094900A1B808 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
+		E92226541DF3094900A1B808 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
+		E9A0ADA11DF3E85400DDEEBE /* MenuViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimation.h; sourceTree = "<group>"; };
+		E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimation.m; sourceTree = "<group>"; };
+		E9A0ADA41DF3ECA300DDEEBE /* MenuViewAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimationDelegate.h; sourceTree = "<group>"; };
+		E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimationDelegate.m; sourceTree = "<group>"; };
+		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
+		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,34 +131,53 @@
 			children = (
 				E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */,
 				E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */,
+				E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */,
+				E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */,
+				E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
 		};
-		E922262A1DF291DB00A1B808 /* View */ = {
+		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E922262B1DF291DB00A1B808 /* MainView */,
+				E92226431DF3091700A1B808 /* MainView */,
+				E92226491DF3091700A1B808 /* MenuView */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E922262B1DF291DB00A1B808 /* MainView */ = {
+		E92226431DF3091700A1B808 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				E922262C1DF291DB00A1B808 /* CustomView */,
-				E92226311DF291DB00A1B808 /* MainViewController.h */,
-				E92226321DF291DB00A1B808 /* MainViewController.m */,
-				E92226361DF2BDAE00A1B808 /* MainView.storyboard */,
+				E92226441DF3091700A1B808 /* LessonTableViewCell.h */,
+				E92226451DF3091700A1B808 /* LessonTableViewCell.m */,
+				E92226461DF3091700A1B808 /* MainView.storyboard */,
+				E92226471DF3091700A1B808 /* MainViewController.h */,
+				E92226481DF3091700A1B808 /* MainViewController.m */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		E922262C1DF291DB00A1B808 /* CustomView */ = {
+		E92226491DF3091700A1B808 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
-				E922262D1DF291DB00A1B808 /* LessonTableViewCell.h */,
-				E922262E1DF291DB00A1B808 /* LessonTableViewCell.m */,
+				E922264A1DF3091700A1B808 /* MenuView.storyboard */,
+				E922264B1DF3091700A1B808 /* MenuViewController.h */,
+				E922264C1DF3091700A1B808 /* MenuViewController.m */,
+				E9A0ADA11DF3E85400DDEEBE /* MenuViewAnimation.h */,
+				E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */,
+				E9A0ADA41DF3ECA300DDEEBE /* MenuViewAnimationDelegate.h */,
+				E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		E92226521DF3091F00A1B808 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E92226531DF3094900A1B808 /* ImageButton.h */,
+				E92226541DF3094900A1B808 /* ImageButton.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -170,7 +207,8 @@
 		E9E703CD1DEC417800F5C042 /* School-Service-App-OC */ = {
 			isa = PBXGroup;
 			children = (
-				E922262A1DF291DB00A1B808 /* View */,
+				E92226521DF3091F00A1B808 /* CustomView */,
+				E92226421DF3091700A1B808 /* View */,
 				E911E1681DEEF2CD008A1A05 /* Catagory */,
 				E9E704041DEC41C600F5C042 /* Model */,
 				E9E703D11DEC417800F5C042 /* AppDelegate.h */,
@@ -327,7 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
-				E92226371DF2BDAF00A1B808 /* MainView.storyboard in Resources */,
+				E922264E1DF3091700A1B808 /* MainView.storyboard in Resources */,
+				E92226501DF3091700A1B808 /* MenuView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,12 +440,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E92226331DF291DB00A1B808 /* LessonTableViewCell.m in Sources */,
+				E922264D1DF3091700A1B808 /* LessonTableViewCell.m in Sources */,
+				E922264F1DF3091700A1B808 /* MainViewController.m in Sources */,
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
+				E92226511DF3091700A1B808 /* MenuViewController.m in Sources */,
+				E9A0ADA61DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
-				E92226351DF291DB00A1B808 /* MainViewController.m in Sources */,
+				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */,
+				E9A0ADA31DF3E85400DDEEBE /* MenuViewAnimation.m in Sources */,
+				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
