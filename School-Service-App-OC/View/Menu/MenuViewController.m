@@ -48,33 +48,39 @@
     [self.view addSubview:self.activitiesButton];
     
     [self.searchButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+        make.width.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+        make.height.equalTo(self.searchButton.mas_width).multipliedBy(1.3);
         make.left.equalTo(@0);
     }];
     [self.lostAndFoundButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.searchButton);
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+         make.size.equalTo(self.searchButton);
         make.left.equalTo(self.searchButton.mas_right);
     }];
     [self.consumptionButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.lostAndFoundButton);
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+         make.size.equalTo(self.searchButton);
         make.left.equalTo(self.lostAndFoundButton.mas_right);
     }];
     [self.repairButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+         make.size.equalTo(self.searchButton);
         make.left.equalTo(@0);
-        make.bottom.equalTo(self.searchButton.mas_bottom);
+        make.top.equalTo(self.searchButton.mas_bottom);
     }];
     [self.scheduleButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.repairButton);
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+        make.size.equalTo(self.searchButton);
         make.left.equalTo(self.repairButton.mas_right);
     }];
     [self.consumptionButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.scheduleButton);
-        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+        //make.centerY.equalTo(self.scheduleButton);
+        make.size.equalTo(self.searchButton);
         make.left.equalTo(self.scheduleButton.mas_right);
+    }];
+    [self.activitiesButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@0);
+        make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
+        make.top.equalTo(self.repairButton.mas_bottom);
     }];
 }
 #pragma mark 懒加载

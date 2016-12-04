@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "School-Service-App-OC/AppDelegate.m"
-            timestampString = "502466543.800725"
+            timestampString = "502560865.09782"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "-enterRootView"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,12 +90,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "School-Service-App-OC/View/MenuView/MenuViewController.m"
-            timestampString = "502528149.62301"
+            timestampString = "502552405.3678"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-searchButton"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "School-Service-App-OC/View/Main/LessonTableViewCell.m"
+            timestampString = "502566824.525048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "-setupSubViews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "School-Service-App-OC/View/Main/LessonTableViewCell.m"
+            timestampString = "502566824.525048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-setupSubViews"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

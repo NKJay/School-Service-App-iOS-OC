@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
-		E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */; };
-		E922264D1DF3091700A1B808 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226451DF3091700A1B808 /* LessonTableViewCell.m */; };
-		E922264E1DF3091700A1B808 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92226461DF3091700A1B808 /* MainView.storyboard */; };
-		E922264F1DF3091700A1B808 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226481DF3091700A1B808 /* MainViewController.m */; };
-		E92226501DF3091700A1B808 /* MenuView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E922264A1DF3091700A1B808 /* MenuView.storyboard */; };
-		E92226511DF3091700A1B808 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E922264C1DF3091700A1B808 /* MenuViewController.m */; };
+		E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */; };
 		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
-		E9A0ADA31DF3E85400DDEEBE /* MenuViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */; };
-		E9A0ADA61DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */; };
+		E942A8421DF45A18001EEC19 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */; };
+		E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83A1DF45A18001EEC19 /* MainViewController.m */; };
+		E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */; };
+		E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */; };
+		E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8411DF45A18001EEC19 /* MenuViewController.m */; };
+		E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A84B1DF45A44001EEC19 /* SettingViewController.m */; };
+		E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E942A8521DF46143001EEC19 /* SettingView.storyboard */; };
+		E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
@@ -48,23 +49,26 @@
 		1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.release.xcconfig"; sourceTree = "<group>"; };
 		27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_School_Service_App_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
-		E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_DefaultColor.h; sourceTree = "<group>"; };
-		E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_DefaultColor.m; sourceTree = "<group>"; };
+		E911E16A1DEEF3ED008A1A05 /* UIColor_decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_decorationColor.h; sourceTree = "<group>"; };
+		E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_decorationColor.m; sourceTree = "<group>"; };
 		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
-		E92226441DF3091700A1B808 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
-		E92226451DF3091700A1B808 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
-		E92226461DF3091700A1B808 /* MainView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
-		E92226471DF3091700A1B808 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		E92226481DF3091700A1B808 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E922264A1DF3091700A1B808 /* MenuView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuView.storyboard; sourceTree = "<group>"; };
-		E922264B1DF3091700A1B808 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		E922264C1DF3091700A1B808 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
 		E92226541DF3094900A1B808 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
-		E9A0ADA11DF3E85400DDEEBE /* MenuViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimation.h; sourceTree = "<group>"; };
-		E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimation.m; sourceTree = "<group>"; };
-		E9A0ADA41DF3ECA300DDEEBE /* MenuViewAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimationDelegate.h; sourceTree = "<group>"; };
-		E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimationDelegate.m; sourceTree = "<group>"; };
+		E942A8361DF45A18001EEC19 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
+		E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
+		E942A8391DF45A18001EEC19 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E942A83A1DF45A18001EEC19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E942A83C1DF45A18001EEC19 /* MenuViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimation.h; sourceTree = "<group>"; };
+		E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimation.m; sourceTree = "<group>"; };
+		E942A83E1DF45A18001EEC19 /* MenuViewAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimationDelegate.h; sourceTree = "<group>"; };
+		E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimationDelegate.m; sourceTree = "<group>"; };
+		E942A8401DF45A18001EEC19 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		E942A8411DF45A18001EEC19 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		E942A84A1DF45A44001EEC19 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		E942A84B1DF45A44001EEC19 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		E942A8521DF46143001EEC19 /* SettingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
+		E942A8561DF4894F001EEC19 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,8 +133,8 @@
 		E911E1681DEEF2CD008A1A05 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
-				E911E16A1DEEF3ED008A1A05 /* UIColor_DefaultColor.h */,
-				E911E16C1DEEF456008A1A05 /* UIColor_DefaultColor.m */,
+				E911E16A1DEEF3ED008A1A05 /* UIColor_decorationColor.h */,
+				E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */,
 				E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */,
 				E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */,
 				E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */,
@@ -141,36 +145,11 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E92226431DF3091700A1B808 /* MainView */,
-				E92226491DF3091700A1B808 /* MenuView */,
+				E942A8341DF45A18001EEC19 /* Setting */,
+				E942A8351DF45A18001EEC19 /* Main */,
+				E942A83B1DF45A18001EEC19 /* Menu */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		E92226431DF3091700A1B808 /* MainView */ = {
-			isa = PBXGroup;
-			children = (
-				E92226441DF3091700A1B808 /* LessonTableViewCell.h */,
-				E92226451DF3091700A1B808 /* LessonTableViewCell.m */,
-				E92226461DF3091700A1B808 /* MainView.storyboard */,
-				E92226471DF3091700A1B808 /* MainViewController.h */,
-				E92226481DF3091700A1B808 /* MainViewController.m */,
-			);
-			path = MainView;
-			sourceTree = "<group>";
-		};
-		E92226491DF3091700A1B808 /* MenuView */ = {
-			isa = PBXGroup;
-			children = (
-				E922264A1DF3091700A1B808 /* MenuView.storyboard */,
-				E922264B1DF3091700A1B808 /* MenuViewController.h */,
-				E922264C1DF3091700A1B808 /* MenuViewController.m */,
-				E9A0ADA11DF3E85400DDEEBE /* MenuViewAnimation.h */,
-				E9A0ADA21DF3E85400DDEEBE /* MenuViewAnimation.m */,
-				E9A0ADA41DF3ECA300DDEEBE /* MenuViewAnimationDelegate.h */,
-				E9A0ADA51DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m */,
-			);
-			path = MenuView;
 			sourceTree = "<group>";
 		};
 		E92226521DF3091F00A1B808 /* CustomView */ = {
@@ -180,6 +159,42 @@
 				E92226541DF3094900A1B808 /* ImageButton.m */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		E942A8341DF45A18001EEC19 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E942A84A1DF45A44001EEC19 /* SettingViewController.h */,
+				E942A84B1DF45A44001EEC19 /* SettingViewController.m */,
+				E942A8521DF46143001EEC19 /* SettingView.storyboard */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E942A8351DF45A18001EEC19 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E942A8361DF45A18001EEC19 /* LessonTableViewCell.h */,
+				E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */,
+				E942A8391DF45A18001EEC19 /* MainViewController.h */,
+				E942A83A1DF45A18001EEC19 /* MainViewController.m */,
+				E942A8561DF4894F001EEC19 /* NewsTableViewCell.h */,
+				E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E942A83B1DF45A18001EEC19 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E942A83C1DF45A18001EEC19 /* MenuViewAnimation.h */,
+				E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */,
+				E942A83E1DF45A18001EEC19 /* MenuViewAnimationDelegate.h */,
+				E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */,
+				E942A8401DF45A18001EEC19 /* MenuViewController.h */,
+				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		E9E703C21DEC417800F5C042 = {
@@ -365,8 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
-				E922264E1DF3091700A1B808 /* MainView.storyboard in Resources */,
-				E92226501DF3091700A1B808 /* MenuView.storyboard in Resources */,
+				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,17 +454,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E922264D1DF3091700A1B808 /* LessonTableViewCell.m in Sources */,
-				E922264F1DF3091700A1B808 /* MainViewController.m in Sources */,
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
+				E942A8421DF45A18001EEC19 /* LessonTableViewCell.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
-				E92226511DF3091700A1B808 /* MenuViewController.m in Sources */,
-				E9A0ADA61DF3ECA300DDEEBE /* MenuViewAnimationDelegate.m in Sources */,
+				E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
+				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
 				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
-				E911E16D1DEEF456008A1A05 /* UIColor_DefaultColor.m in Sources */,
-				E9A0ADA31DF3E85400DDEEBE /* MenuViewAnimation.m in Sources */,
+				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
+				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
+				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
+				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
+				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

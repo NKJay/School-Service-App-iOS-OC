@@ -1,5 +1,5 @@
 //
-//  UIView+Border.h
+//  SettingViewController.h
 //  School-Service-App-OC
 //
 //  Created by NKjay on 2016/12/4.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Border)
--(void)addbottomBorderWith:(CGFloat)lenght AndColor:(UIColor *)color;
+@interface SettingViewController : UITableViewController
+
 @end

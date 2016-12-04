@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor(DefaultColor)
-+(NSArray*)defaultColor;
+@interface UIColor(decorationColor)
++(NSArray*)decorationColor;
 @end

@@ -15,4 +15,5 @@
 @property(strong,nonatomic)Lesson *lesson;
 @property(assign,nonatomic)NSInteger position;
 
+- (void)setDecorationDotColor:(NSInteger)position;
 @end

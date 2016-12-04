@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,13 +25,15 @@
 
 - (void)setupNavBarAppearance{
     [UINavigationBar appearance].backgroundColor = [UIColor whiteColor];
+    [UINavigationBar appearance].tintColor = [UIColor blackColor];
     [UINavigationBar appearance].translucent = true;
 }
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainView" bundle:nil] instantiateInitialViewController];
-    self.window.rootViewController = mainViewController;
+    UIViewController *mainViewController = [[MainViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
 }
 
