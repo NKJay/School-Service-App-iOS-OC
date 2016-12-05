@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
+		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
 		E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */; };
 		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
 		E942A8421DF45A18001EEC19 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */; };
@@ -18,6 +19,8 @@
 		E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A84B1DF45A44001EEC19 /* SettingViewController.m */; };
 		E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E942A8521DF46143001EEC19 /* SettingView.storyboard */; };
 		E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */; };
+		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
+		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
@@ -49,6 +52,8 @@
 		1EF09A9B4BBBA701DB02E466 /* Pods-School-Service-App-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.release.xcconfig"; sourceTree = "<group>"; };
 		27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_School_Service_App_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		E90877F61DF50B4400BA4CEA /* SearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
+		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor_decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_decorationColor.h; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_decorationColor.m; sourceTree = "<group>"; };
 		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
@@ -69,6 +74,10 @@
 		E942A8521DF46143001EEC19 /* SettingView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingView.storyboard; sourceTree = "<group>"; };
 		E942A8561DF4894F001EEC19 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		E942A85A1DF4F694001EEC19 /* ParcelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcelViewController.h; sourceTree = "<group>"; };
+		E942A85B1DF4F694001EEC19 /* ParcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelViewController.m; sourceTree = "<group>"; };
+		E942A85D1DF4F751001EEC19 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
+		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +154,7 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E942A8591DF4F676001EEC19 /* Parcel */,
 				E942A8341DF45A18001EEC19 /* Setting */,
 				E942A8351DF45A18001EEC19 /* Main */,
 				E942A83B1DF45A18001EEC19 /* Menu */,
@@ -157,6 +167,10 @@
 			children = (
 				E92226531DF3094900A1B808 /* ImageButton.h */,
 				E92226541DF3094900A1B808 /* ImageButton.m */,
+				E942A85D1DF4F751001EEC19 /* MenuButton.h */,
+				E942A85E1DF4F751001EEC19 /* MenuButton.m */,
+				E90877F61DF50B4400BA4CEA /* SearchTextField.h */,
+				E90877F71DF50B4400BA4CEA /* SearchTextField.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -195,6 +209,15 @@
 				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		E942A8591DF4F676001EEC19 /* Parcel */ = {
+			isa = PBXGroup;
+			children = (
+				E942A85A1DF4F694001EEC19 /* ParcelViewController.h */,
+				E942A85B1DF4F694001EEC19 /* ParcelViewController.m */,
+			);
+			path = Parcel;
 			sourceTree = "<group>";
 		};
 		E9E703C21DEC417800F5C042 = {
@@ -459,10 +482,13 @@
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
 				E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
+				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
 				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
 				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
+				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
+				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,

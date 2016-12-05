@@ -83,6 +83,7 @@
         make.top.equalTo(self.repairButton.mas_bottom);
     }];
 }
+
 #pragma mark 懒加载
 -(ImageButton *)searchButton{
     if (!_searchButton) {

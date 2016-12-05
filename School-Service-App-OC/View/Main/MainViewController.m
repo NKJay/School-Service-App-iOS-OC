@@ -75,7 +75,6 @@
         _tableView.bounces = false;
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.scrollEnabled = true;
     }
     return _tableView;
 }
