@@ -22,6 +22,8 @@
 		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
 		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
+		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
+		E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
@@ -80,6 +82,10 @@
 		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionViewController.h; sourceTree = "<group>"; };
+		E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionViewController.m; sourceTree = "<group>"; };
+		E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
+		E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionTableViewCell.m; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,7 +160,7 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E942A8591DF4F676001EEC19 /* Parcel */,
+				E9E3FDBD1E2877D800F89821 /* Consumption */,
 				E942A8341DF45A18001EEC19 /* Setting */,
 				E942A8351DF45A18001EEC19 /* Main */,
 				E942A83B1DF45A18001EEC19 /* Menu */,
@@ -217,7 +223,20 @@
 				E942A85A1DF4F694001EEC19 /* ParcelViewController.h */,
 				E942A85B1DF4F694001EEC19 /* ParcelViewController.m */,
 			);
-			path = Parcel;
+			name = Parcel;
+			path = ../Parcel;
+			sourceTree = "<group>";
+		};
+		E9E3FDBD1E2877D800F89821 /* Consumption */ = {
+			isa = PBXGroup;
+			children = (
+				E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */,
+				E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */,
+				E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */,
+				E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */,
+				E942A8591DF4F676001EEC19 /* Parcel */,
+			);
+			path = Consumption;
 			sourceTree = "<group>";
 		};
 		E9E703C21DEC417800F5C042 = {
@@ -485,6 +504,7 @@
 				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
 				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
 				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
+				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
@@ -493,6 +513,7 @@
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
+				E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

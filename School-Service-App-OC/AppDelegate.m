@@ -32,8 +32,8 @@
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    UIViewController *mainViewController = [[MainViewController alloc] init];
-    UIViewController *mainViewController = [[ParcelViewController alloc] init];
+    UIViewController *mainViewController = [[MainViewController alloc] init];
+//    UIViewController *mainViewController = [[ParcelViewController alloc] init];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];

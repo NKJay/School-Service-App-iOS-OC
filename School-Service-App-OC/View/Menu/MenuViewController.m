@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import <Masonry/Masonry.h>
 #import "ImageButton.h"
+#import "ConsumptionViewController.h"
 
 @interface MenuViewController ()
 @property(strong,nonatomic)ImageButton *searchButton;
@@ -18,6 +19,7 @@
 @property(strong,nonatomic)ImageButton *scheduleButton;
 @property(strong,nonatomic)ImageButton *lectureButton;
 @property(strong,nonatomic)ImageButton *activitiesButton;
+@property(strong,nonatomic)UIButton *closeButton;
 @end
 
 @implementation MenuViewController
@@ -38,7 +40,6 @@
 }
 
 - (void)setupViews{
-    
     [self.view addSubview:self.searchButton];
     [self.view addSubview:self.lostAndFoundButton];
     [self.view addSubview:self.consumptionButton];
@@ -46,11 +47,13 @@
     [self.view addSubview:self.scheduleButton];
     [self.view addSubview:self.lectureButton];
     [self.view addSubview:self.activitiesButton];
+    [self.view addSubview:self.closeButton];
     
     [self.searchButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
         make.height.equalTo(self.searchButton.mas_width).multipliedBy(1.3);
         make.left.equalTo(@0);
+        make.top.equalTo(@20);
     }];
     [self.lostAndFoundButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.searchButton);
@@ -72,8 +75,8 @@
         make.size.equalTo(self.searchButton);
         make.left.equalTo(self.repairButton.mas_right);
     }];
-    [self.consumptionButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        //make.centerY.equalTo(self.scheduleButton);
+    [self.lectureButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.scheduleButton);
         make.size.equalTo(self.searchButton);
         make.left.equalTo(self.scheduleButton.mas_right);
     }];
@@ -82,6 +85,22 @@
         make.width.and.height.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
         make.top.equalTo(self.repairButton.mas_bottom);
     }];
+
+    [self.closeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.height.equalTo(@20);
+        make.centerX.equalTo(self.view);
+        make.bottom.equalTo(@-40);
+        
+    }];
+}
+
+#pragma mark 点击事件
+- (void)closeButtonDidClick{
+    [self dismissViewControllerAnimated:true completion:nil];
+}
+
+- (void)consumptionButtonDidClick{
+    [self presentViewController:[[ConsumptionViewController alloc] init] animated:true completion:nil];
 }
 
 #pragma mark 懒加载
@@ -102,6 +121,7 @@
 -(ImageButton *)consumptionButton{
     if (!_consumptionButton) {
         _consumptionButton = [[ImageButton alloc] initWithTitle:@"消费明细" andImageName:@"settings_icon"];
+        [_consumptionButton addTarget:self action:@selector(consumptionButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return  _consumptionButton;
 }
@@ -132,6 +152,15 @@
         _activitiesButton = [[ImageButton alloc] initWithTitle:@"校园活动" andImageName:@"settings_icon"];
     }
     return  _activitiesButton;
+}
+
+-(UIButton *)closeButton {
+    if (!_closeButton) {
+        _closeButton = [[UIButton alloc] init];
+        [_closeButton setImage:[UIImage imageNamed:@"settings_icon"] forState:UIControlStateNormal];
+        [_closeButton addTarget:self action:@selector(closeButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _closeButton;
 }
 
 @end

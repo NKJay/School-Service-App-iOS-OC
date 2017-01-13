@@ -116,7 +116,7 @@
         _titleLabel.font = [UIFont systemFontOfSize:13];
         _titleLabel.text = @"奥赛犯案司令范狂傲三番多拉空间扥爱兰陵asdasdassadasdasd";
         _titleLabel.numberOfLines = 0;
-        _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _titleLabel.lineBreakMode = NSLineBreakByCharWrapping;
     }
     return _titleLabel;
 }
