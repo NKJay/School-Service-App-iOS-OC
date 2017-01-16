@@ -11,7 +11,17 @@
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
 		E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */; };
 		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
-		E942A8421DF45A18001EEC19 /* LessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */; };
+		E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */; };
+		E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */; };
+		E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92E66351E2C789600A759BB /* LostAndFoundView.storyboard */; };
+		E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66381E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m */; };
+		E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E663E1E2C7C5300A759BB /* LostAndFoundModel.m */; };
+		E92E66421E2C821700A759BB /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66411E2C821700A759BB /* NewsModel.m */; };
+		E92E66451E2C829600A759BB /* PersonalInformationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */; };
+		E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */; };
+		E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */; };
+		E92E664D1E2C895900A759BB /* ParcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E664C1E2C895900A759BB /* ParcelModel.m */; };
+		E92E66501E2C896A00A759BB /* ConsumptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E664F1E2C896A00A759BB /* ConsumptionModel.m */; };
 		E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83A1DF45A18001EEC19 /* MainViewController.m */; };
 		E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */; };
 		E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */; };
@@ -61,8 +71,25 @@
 		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
 		E92226541DF3094900A1B808 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
-		E942A8361DF45A18001EEC19 /* LessonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonTableViewCell.h; sourceTree = "<group>"; };
-		E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonTableViewCell.m; sourceTree = "<group>"; };
+		E92E662F1E2C77F600A759BB /* LostAndFoundCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCollectionViewLayout.h; sourceTree = "<group>"; };
+		E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostAndFoundCollectionViewLayout.m; sourceTree = "<group>"; };
+		E92E66321E2C788000A759BB /* LostAndFoundCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCollectionViewController.h; sourceTree = "<group>"; };
+		E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostAndFoundCollectionViewController.m; sourceTree = "<group>"; };
+		E92E66351E2C789600A759BB /* LostAndFoundView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LostAndFoundView.storyboard; sourceTree = "<group>"; };
+		E92E66371E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCollectionViewCell.h; sourceTree = "<group>"; };
+		E92E66381E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostAndFoundCollectionViewCell.m; sourceTree = "<group>"; };
+		E92E663D1E2C7C5300A759BB /* LostAndFoundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LostAndFoundModel.h; path = "School-Service-App-OC/View/LostAndFound/LostAndFoundModel.h"; sourceTree = SOURCE_ROOT; };
+		E92E663E1E2C7C5300A759BB /* LostAndFoundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LostAndFoundModel.m; path = "School-Service-App-OC/View/LostAndFound/LostAndFoundModel.m"; sourceTree = SOURCE_ROOT; };
+		E92E66401E2C821600A759BB /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsModel.h; path = "School-Service-App-OC/View/LostAndFound/NewsModel.h"; sourceTree = SOURCE_ROOT; };
+		E92E66411E2C821700A759BB /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsModel.m; path = "School-Service-App-OC/View/LostAndFound/NewsModel.m"; sourceTree = SOURCE_ROOT; };
+		E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PersonalInformationView.storyboard; sourceTree = "<group>"; };
+		E92E66461E2C88FE00A759BB /* LostAndFoundCheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCheckinViewController.h; sourceTree = "<group>"; };
+		E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostAndFoundCheckinViewController.m; sourceTree = "<group>"; };
+		E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundCheckinViewController.xib; sourceTree = "<group>"; };
+		E92E664B1E2C895900A759BB /* ParcelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParcelModel.h; path = "School-Service-App-OC/View/LostAndFound/ParcelModel.h"; sourceTree = SOURCE_ROOT; };
+		E92E664C1E2C895900A759BB /* ParcelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParcelModel.m; path = "School-Service-App-OC/View/LostAndFound/ParcelModel.m"; sourceTree = SOURCE_ROOT; };
+		E92E664E1E2C896A00A759BB /* ConsumptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsumptionModel.h; path = "School-Service-App-OC/View/LostAndFound/ConsumptionModel.h"; sourceTree = SOURCE_ROOT; };
+		E92E664F1E2C896A00A759BB /* ConsumptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsumptionModel.m; path = "School-Service-App-OC/View/LostAndFound/ConsumptionModel.m"; sourceTree = SOURCE_ROOT; };
 		E942A8391DF45A18001EEC19 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E942A83A1DF45A18001EEC19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E942A83C1DF45A18001EEC19 /* MenuViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimation.h; sourceTree = "<group>"; };
@@ -160,6 +187,9 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E92E66431E2C828700A759BB /* PersonalInformation */,
+				E92E662B1E2C771800A759BB /* LostAndFound */,
+				E942A8591DF4F676001EEC19 /* Parcel */,
 				E9E3FDBD1E2877D800F89821 /* Consumption */,
 				E942A8341DF45A18001EEC19 /* Setting */,
 				E942A8351DF45A18001EEC19 /* Main */,
@@ -181,6 +211,31 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		E92E662B1E2C771800A759BB /* LostAndFound */ = {
+			isa = PBXGroup;
+			children = (
+				E92E662F1E2C77F600A759BB /* LostAndFoundCollectionViewLayout.h */,
+				E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */,
+				E92E66321E2C788000A759BB /* LostAndFoundCollectionViewController.h */,
+				E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */,
+				E92E66351E2C789600A759BB /* LostAndFoundView.storyboard */,
+				E92E66371E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.h */,
+				E92E66381E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m */,
+				E92E66461E2C88FE00A759BB /* LostAndFoundCheckinViewController.h */,
+				E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */,
+				E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */,
+			);
+			path = LostAndFound;
+			sourceTree = "<group>";
+		};
+		E92E66431E2C828700A759BB /* PersonalInformation */ = {
+			isa = PBXGroup;
+			children = (
+				E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */,
+			);
+			path = PersonalInformation;
+			sourceTree = "<group>";
+		};
 		E942A8341DF45A18001EEC19 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +249,6 @@
 		E942A8351DF45A18001EEC19 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				E942A8361DF45A18001EEC19 /* LessonTableViewCell.h */,
-				E942A8371DF45A18001EEC19 /* LessonTableViewCell.m */,
 				E942A8391DF45A18001EEC19 /* MainViewController.h */,
 				E942A83A1DF45A18001EEC19 /* MainViewController.m */,
 				E942A8561DF4894F001EEC19 /* NewsTableViewCell.h */,
@@ -223,8 +276,7 @@
 				E942A85A1DF4F694001EEC19 /* ParcelViewController.h */,
 				E942A85B1DF4F694001EEC19 /* ParcelViewController.m */,
 			);
-			name = Parcel;
-			path = ../Parcel;
+			path = Parcel;
 			sourceTree = "<group>";
 		};
 		E9E3FDBD1E2877D800F89821 /* Consumption */ = {
@@ -234,7 +286,6 @@
 				E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */,
 				E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */,
 				E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */,
-				E942A8591DF4F676001EEC19 /* Parcel */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -308,6 +359,14 @@
 		E9E704041DEC41C600F5C042 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E92E663D1E2C7C5300A759BB /* LostAndFoundModel.h */,
+				E92E663E1E2C7C5300A759BB /* LostAndFoundModel.m */,
+				E92E66401E2C821600A759BB /* NewsModel.h */,
+				E92E66411E2C821700A759BB /* NewsModel.m */,
+				E92E664B1E2C895900A759BB /* ParcelModel.h */,
+				E92E664C1E2C895900A759BB /* ParcelModel.m */,
+				E92E664E1E2C896A00A759BB /* ConsumptionModel.h */,
+				E92E664F1E2C896A00A759BB /* ConsumptionModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,7 +481,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
+				E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */,
+				E92E66451E2C829600A759BB /* PersonalInformationView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,23 +559,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
-				E942A8421DF45A18001EEC19 /* LessonTableViewCell.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
 				E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
 				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
+				E92E66501E2C896A00A759BB /* ConsumptionModel.m in Sources */,
 				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
+				E92E66421E2C821700A759BB /* NewsModel.m in Sources */,
 				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
+				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
+				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
+				E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
 				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
+				E92E664D1E2C895900A759BB /* ParcelModel.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
+				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
 				E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */,
+				E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

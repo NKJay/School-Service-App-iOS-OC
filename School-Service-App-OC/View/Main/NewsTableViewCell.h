@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsModel.h"
 
 @interface NewsTableViewCell : UITableViewCell
+@property(nonatomic,strong) NewsModel *model;
+
 - (void)setDecorationDotColor:(NSInteger)position;
 @end

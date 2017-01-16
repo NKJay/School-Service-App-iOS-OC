@@ -7,12 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConsumptionModel.h"
 
 @interface ConsumptionTableViewCell : UITableViewCell
-@property(copy,nonatomic) NSString *date;
-@property(copy,nonatomic) NSString *time;
-@property(copy,nonatomic) NSString *price;
-@property(copy,nonatomic) NSString *catagory;
-@property(strong,nonatomic) UIImage *catagoryIcon;
-
+@property(nonatomic,strong) ConsumptionModel *model;
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "LessonTableViewCell.h"
 #import "NewsTableViewCell.h"
 #import "MenuViewController.h"
 #import "MenuViewAnimationDelegate.h"
@@ -82,8 +81,8 @@
 #pragma mark tableView dataSource&delegate
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.section == 1) {
-    }
+    NewsTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setDecorationDotColor:indexPath.item];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -91,34 +90,20 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return  indexPath.section == 0 ? 70.0 : 117.0;
+    return  117.0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return section == 0 ? 5 : 10;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell;
-    if (indexPath.section == 0) {
-        cell = [self setupLessonCell:tableView cellForRowAtIndexPath:indexPath];
-    } else{
-        cell = [self setupNewsCell:tableView cellForRowAtIndexPath:indexPath];
-        return cell;
-    }
+    NewsTableViewCell *cell = [self setupNewsCell:tableView cellForRowAtIndexPath:indexPath];
     return cell;
 }
 
-- (UITableViewCell *)setupLessonCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LessonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lessonCell"];
-    if (!cell) {
-        cell = [[LessonTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"lessonCell"];
-    }
-    [cell setDecorationDotColor:indexPath.item];
-    return cell;
-}
 
-- (UITableViewCell *)setupNewsCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (NewsTableViewCell *)setupNewsCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];
     if (!cell) {
         cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"newsCell"];

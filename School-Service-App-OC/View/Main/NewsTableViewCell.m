@@ -14,7 +14,7 @@
 @property(strong,nonatomic)UIView *decorationDot,*separaterLine;
 @property(strong,nonatomic)UILabel *titleLabel,*catagoryLabel;
 @property(strong,nonatomic)UIImageView *videoImageView,*photoImageView,*textImageView;
-@property(assign,nonatomic)BOOL wasSelected;
+@property(assign,nonatomic)BOOL wasRead;
 @end
 @implementation NewsTableViewCell
 
@@ -22,7 +22,7 @@
     NSArray *dotColor = [UIColor decorationColor];
     UIColor *currentColor = dotColor[position % 6];
     
-    self.decorationDot.backgroundColor = self.wasSelected ? currentColor : [UIColor whiteColor];
+    self.decorationDot.backgroundColor = self.wasRead ? currentColor : [UIColor clearColor];
     self.decorationDot.layer.borderColor = currentColor.CGColor;
     
     self.catagoryLabel.textColor = currentColor;
@@ -37,7 +37,9 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
+    if (selected) {
+        self.wasRead = true;
+    }
     // Configure the view for the selected state
 }
 
@@ -69,7 +71,8 @@
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(@36);
+        make.left.equalTo(@36);
+        make.right.equalTo(@-36);
         make.centerY.equalTo(self);
     }];
     
@@ -115,7 +118,7 @@
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont systemFontOfSize:13];
         _titleLabel.text = @"奥赛犯案司令范狂傲三番多拉空间扥爱兰陵asdasdassadasdasd";
-        _titleLabel.numberOfLines = 0;
+        _titleLabel.numberOfLines = 2;
         _titleLabel.lineBreakMode = NSLineBreakByCharWrapping;
     }
     return _titleLabel;
