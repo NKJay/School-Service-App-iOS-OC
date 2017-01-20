@@ -32,6 +32,10 @@
 		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
 		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
+		E9C9A0491E31ACF100B0483F /* PickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0481E31ACF100B0483F /* PickerTextField.m */; };
+		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
+		E9C9A04E1E31B19800B0483F /* TextFieldPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */; };
+		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
 		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
 		E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
@@ -109,6 +113,13 @@
 		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		E9C9A0471E31ACF100B0483F /* PickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextField.h; sourceTree = "<group>"; };
+		E9C9A0481E31ACF100B0483F /* PickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextField.m; sourceTree = "<group>"; };
+		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
+		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
+		E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldPickerViewController.xib; sourceTree = "<group>"; };
+		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
+		E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldAnimation.m; sourceTree = "<group>"; };
 		E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionViewController.h; sourceTree = "<group>"; };
 		E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionViewController.m; sourceTree = "<group>"; };
 		E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
@@ -207,6 +218,13 @@
 				E942A85E1DF4F751001EEC19 /* MenuButton.m */,
 				E90877F61DF50B4400BA4CEA /* SearchTextField.h */,
 				E90877F71DF50B4400BA4CEA /* SearchTextField.m */,
+				E9C9A0471E31ACF100B0483F /* PickerTextField.h */,
+				E9C9A0481E31ACF100B0483F /* PickerTextField.m */,
+				E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */,
+				E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */,
+				E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */,
+				E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */,
+				E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -481,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E9C9A04E1E31B19800B0483F /* TextFieldPickerViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */,
@@ -563,6 +582,7 @@
 				E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */,
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
 				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
+				E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */,
 				E92E66501E2C896A00A759BB /* ConsumptionModel.m in Sources */,
 				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
 				E92E66421E2C821700A759BB /* NewsModel.m in Sources */,
@@ -571,11 +591,13 @@
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
+				E9C9A0491E31ACF100B0483F /* PickerTextField.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
 				E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
 				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
 				E92E664D1E2C895900A759BB /* ParcelModel.m in Sources */,
+				E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,

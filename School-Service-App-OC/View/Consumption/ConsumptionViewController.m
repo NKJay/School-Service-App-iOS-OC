@@ -36,10 +36,6 @@
 //    UITableViewCell *cell;
 //    if (indexPath.section != 0) {
         ConsumptionTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"itemCell"];
-        cell.date = @"今天";
-        cell.catagory = @"电费";
-        cell.catagoryIcon = [UIImage imageNamed:@"settings_icon"];
-        cell.time = @"11.00";
         
 //    } else{
 //        

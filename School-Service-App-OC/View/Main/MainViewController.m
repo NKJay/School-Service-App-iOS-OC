@@ -18,7 +18,7 @@
 @property(assign,nonatomic) CGFloat screanHeight;
 @property(strong,nonatomic) MenuViewAnimationDelegate *animationDelegate;
 @property(strong,nonatomic) UITableView *tableView;
-@property(strong,nonatomic) UIImageView *backgroundImageView;
+//@property(strong,nonatomic) UIImageView *backgroundImageView;
 @end
 
 @implementation MainViewController
@@ -46,7 +46,7 @@
 - (void)initializeView{
 //    [self.view addSubview:self.backgroundImageView];
     [self.view addSubview:self.tableView];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"back"]];
+    self.view.backgroundColor = [UIColor whiteColor];//[UIColor colorWithPatternImage:[UIImage imageNamed:@"back"]];
 }
 
 - (void)setupNavBar{
@@ -58,20 +58,19 @@
 
 
 #pragma mark 懒加载
-- (UIImageView *)backgroundImageView{
-    if (!_backgroundImageView) {
-        _backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back"]];
-        _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
-        _backgroundImageView.frame = self.view.bounds;
-    }
-    return _backgroundImageView;
-}
+//- (UIImageView *)backgroundImageView{
+//    if (!_backgroundImageView) {
+//        _backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back"]];
+//        _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
+//        _backgroundImageView.frame = self.view.bounds;
+//    }
+//    return _backgroundImageView;
+//}
 - (UITableView *)tableView{
     if(!_tableView){
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.bounces = false;
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }
