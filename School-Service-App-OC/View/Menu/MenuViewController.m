@@ -12,13 +12,9 @@
 #import "ConsumptionViewController.h"
 
 @interface MenuViewController ()
-@property(strong,nonatomic)ImageButton *searchButton;
-@property(strong,nonatomic)ImageButton *lostAndFoundButton;
-@property(strong,nonatomic)ImageButton *consumptionButton;
-@property(strong,nonatomic)ImageButton *repairButton;
-@property(strong,nonatomic)ImageButton *scheduleButton;
-@property(strong,nonatomic)ImageButton *lectureButton;
-@property(strong,nonatomic)ImageButton *activitiesButton;
+@property(strong,nonatomic)ImageButton *searchButton,*activitiesButton,*lectureButton,*lostAndFoundButton;
+@property(strong,nonatomic)ImageButton *consumptionButton,*repairButton,*scheduleButton,*avatarButton;
+@property(strong,nonatomic) UILabel *balanceLabel;
 @property(strong,nonatomic)UIButton *closeButton;
 @end
 
@@ -29,7 +25,7 @@
     [self setupBlurEffect];
     [self setupViews];
 }
-
+//设置背景虚化
 -(void)setupBlurEffect{
     self.view.backgroundColor = [UIColor clearColor];
     UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
@@ -47,13 +43,28 @@
     [self.view addSubview:self.scheduleButton];
     [self.view addSubview:self.lectureButton];
     [self.view addSubview:self.activitiesButton];
+    [self.view addSubview:self.avatarButton];
     [self.view addSubview:self.closeButton];
+    [self.view addSubview:self.balanceLabel];
+    
+    
+    [self.avatarButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.height.equalTo(@98);
+        make.width.equalTo(@58);
+        make.top.equalTo(self.view);
+    }];
+    
+    [self.balanceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(self.avatarButton.mas_bottom);
+    }];
     
     [self.searchButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.view.mas_width).multipliedBy(1.0/3.0);
-        make.height.equalTo(self.searchButton.mas_width).multipliedBy(1.3);
+        make.height.equalTo(self.searchButton.mas_width);
         make.left.equalTo(@0);
-        make.top.equalTo(@20);
+        make.top.equalTo(self.balanceLabel.mas_bottom);
     }];
     [self.lostAndFoundButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(self.searchButton);
@@ -101,6 +112,10 @@
 
 - (void)consumptionButtonDidClick{
     [self presentViewController:[[ConsumptionViewController alloc] init] animated:true completion:nil];
+}
+
+- (void)avaterButtonDidClick{
+    
 }
 
 #pragma mark 懒加载
@@ -154,6 +169,14 @@
     return  _activitiesButton;
 }
 
+-(ImageButton *)avatarButton{
+    if (!_avatarButton) {
+        _avatarButton = [[ImageButton alloc] initWithTitle:@"pei" andImageName:@"settings_icon"];
+        [_avatarButton addTarget:self action:@selector(avaterButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return  _avatarButton;
+}
+
 -(UIButton *)closeButton {
     if (!_closeButton) {
         _closeButton = [[UIButton alloc] init];
@@ -161,6 +184,15 @@
         [_closeButton addTarget:self action:@selector(closeButtonDidClick) forControlEvents:UIControlEventTouchUpInside];
     }
     return _closeButton;
+}
+
+-(UILabel *)balanceLabel {
+    if (!_balanceLabel) {
+        _balanceLabel = [[UILabel alloc] init];
+        _balanceLabel.text = @"99.70";
+        _balanceLabel.font = [UIFont systemFontOfSize:28];
+    }
+    return _balanceLabel;
 }
 
 @end

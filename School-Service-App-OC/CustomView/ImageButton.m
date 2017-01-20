@@ -16,7 +16,6 @@
     if (self) {
         
         [self setTitle:title forState:UIControlStateNormal];
-//        [self setTitle:<#(nullable NSString *)#> forState:<#(UIControlState)#>];
         [self setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -47,8 +46,8 @@
 }
 
 -(CGRect)imageRectForContentRect:(CGRect)contentRect{
-    CGFloat imageSideLength = CGRectGetWidth(contentRect) *0.5;
-    return CGRectMake(CGRectGetWidth(contentRect)*0.25, CGRectGetHeight(contentRect)*0.25, imageSideLength, imageSideLength);
+    CGFloat imageSideLength = CGRectGetWidth(contentRect) *0.25;
+    return CGRectMake(CGRectGetWidth(contentRect)*0.375, CGRectGetHeight(contentRect)*0.375, imageSideLength, imageSideLength);
 }
 
 @end

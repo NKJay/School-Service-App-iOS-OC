@@ -17,7 +17,6 @@
 		E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66381E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m */; };
 		E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E663E1E2C7C5300A759BB /* LostAndFoundModel.m */; };
 		E92E66421E2C821700A759BB /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66411E2C821700A759BB /* NewsModel.m */; };
-		E92E66451E2C829600A759BB /* PersonalInformationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */; };
 		E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */; };
 		E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */; };
 		E92E664D1E2C895900A759BB /* ParcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E664C1E2C895900A759BB /* ParcelModel.m */; };
@@ -34,8 +33,9 @@
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
 		E9C9A0491E31ACF100B0483F /* PickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0481E31ACF100B0483F /* PickerTextField.m */; };
 		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
-		E9C9A04E1E31B19800B0483F /* TextFieldPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */; };
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
+		E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */; };
+		E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */; };
 		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
 		E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
@@ -86,7 +86,6 @@
 		E92E663E1E2C7C5300A759BB /* LostAndFoundModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LostAndFoundModel.m; path = "School-Service-App-OC/View/LostAndFound/LostAndFoundModel.m"; sourceTree = SOURCE_ROOT; };
 		E92E66401E2C821600A759BB /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsModel.h; path = "School-Service-App-OC/View/LostAndFound/NewsModel.h"; sourceTree = SOURCE_ROOT; };
 		E92E66411E2C821700A759BB /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsModel.m; path = "School-Service-App-OC/View/LostAndFound/NewsModel.m"; sourceTree = SOURCE_ROOT; };
-		E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PersonalInformationView.storyboard; sourceTree = "<group>"; };
 		E92E66461E2C88FE00A759BB /* LostAndFoundCheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCheckinViewController.h; sourceTree = "<group>"; };
 		E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LostAndFoundCheckinViewController.m; sourceTree = "<group>"; };
 		E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundCheckinViewController.xib; sourceTree = "<group>"; };
@@ -117,9 +116,11 @@
 		E9C9A0481E31ACF100B0483F /* PickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextField.m; sourceTree = "<group>"; };
 		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
 		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
-		E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldPickerViewController.xib; sourceTree = "<group>"; };
 		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
 		E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldAnimation.m; sourceTree = "<group>"; };
+		E9D173B21E321DA60095DE7C /* PersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationViewController.h; sourceTree = "<group>"; };
+		E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationViewController.m; sourceTree = "<group>"; };
+		E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalInformationViewController.xib; sourceTree = "<group>"; };
 		E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionViewController.h; sourceTree = "<group>"; };
 		E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionViewController.m; sourceTree = "<group>"; };
 		E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
@@ -222,7 +223,6 @@
 				E9C9A0481E31ACF100B0483F /* PickerTextField.m */,
 				E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */,
 				E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */,
-				E9C9A04C1E31B19800B0483F /* TextFieldPickerViewController.xib */,
 				E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */,
 				E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */,
 			);
@@ -249,7 +249,9 @@
 		E92E66431E2C828700A759BB /* PersonalInformation */ = {
 			isa = PBXGroup;
 			children = (
-				E92E66441E2C829600A759BB /* PersonalInformationView.storyboard */,
+				E9D173B21E321DA60095DE7C /* PersonalInformationViewController.h */,
+				E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */,
+				E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */,
 			);
 			path = PersonalInformation;
 			sourceTree = "<group>";
@@ -498,12 +500,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
-				E9C9A04E1E31B19800B0483F /* TextFieldPickerViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */,
-				E92E66451E2C829600A759BB /* PersonalInformationView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +589,7 @@
 				E92E66421E2C821700A759BB /* NewsModel.m in Sources */,
 				E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
+				E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */,
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
