@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "ImageButton.h"
 #import "ConsumptionViewController.h"
+#import "LostAndFoundCheckinViewController.h"
 
 @interface MenuViewController ()
 @property(strong,nonatomic)ImageButton *searchButton,*activitiesButton,*lectureButton,*lostAndFoundButton;
@@ -115,6 +116,8 @@
 }
 
 - (void)avaterButtonDidClick{
+    UIViewController *vc = [[UIViewController alloc] initWithNibName:@"LostAndFoundCheckinViewController" bundle:nil];
+    [self presentViewController:vc animated:true completion:nil];
     
 }
 

@@ -31,9 +31,9 @@
 		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
 		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
-		E9C9A0491E31ACF100B0483F /* PickerTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0481E31ACF100B0483F /* PickerTextField.m */; };
 		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
+		E9CF397D1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */; };
 		E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */; };
 		E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */; };
 		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
@@ -112,12 +112,12 @@
 		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
-		E9C9A0471E31ACF100B0483F /* PickerTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextField.h; sourceTree = "<group>"; };
-		E9C9A0481E31ACF100B0483F /* PickerTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextField.m; sourceTree = "<group>"; };
 		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
 		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
 		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
 		E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldAnimation.m; sourceTree = "<group>"; };
+		E9CF397B1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+borderColorFromUIColor.h"; sourceTree = "<group>"; };
+		E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+borderColorFromUIColor.m"; sourceTree = "<group>"; };
 		E9D173B21E321DA60095DE7C /* PersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationViewController.h; sourceTree = "<group>"; };
 		E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationViewController.m; sourceTree = "<group>"; };
 		E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalInformationViewController.xib; sourceTree = "<group>"; };
@@ -192,6 +192,8 @@
 				E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */,
 				E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */,
 				E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */,
+				E9CF397B1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.h */,
+				E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -219,8 +221,6 @@
 				E942A85E1DF4F751001EEC19 /* MenuButton.m */,
 				E90877F61DF50B4400BA4CEA /* SearchTextField.h */,
 				E90877F71DF50B4400BA4CEA /* SearchTextField.m */,
-				E9C9A0471E31ACF100B0483F /* PickerTextField.h */,
-				E9C9A0481E31ACF100B0483F /* PickerTextField.m */,
 				E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */,
 				E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */,
 				E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */,
@@ -578,6 +578,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CF397D1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m in Sources */,
 				E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */,
 				E9E703D01DEC417800F5C042 /* main.m in Sources */,
 				E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */,
@@ -593,7 +594,6 @@
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
-				E9C9A0491E31ACF100B0483F /* PickerTextField.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
 				E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
