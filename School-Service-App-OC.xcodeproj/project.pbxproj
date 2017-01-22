@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
-		E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */; };
+		E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */; };
 		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
 		E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */; };
 		E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */; };
@@ -31,6 +31,10 @@
 		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
 		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
 		E9A0ADA91DF3FB7000DDEEBE /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */; };
+		E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D081E3448D800E274BA /* RegisterViewController.m */; };
+		E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D091E3448D800E274BA /* RegisterViewController.xib */; };
+		E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D0D1E344DAD00E274BA /* LogoView.m */; };
+		E9B56D101E345C9700E274BA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D0F1E345C9700E274BA /* SettingViewController.xib */; };
 		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
 		E9CF397D1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */; };
@@ -70,8 +74,8 @@
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E90877F61DF50B4400BA4CEA /* SearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
 		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
-		E911E16A1DEEF3ED008A1A05 /* UIColor_decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColor_decorationColor.h; sourceTree = "<group>"; };
-		E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColor_decorationColor.m; sourceTree = "<group>"; };
+		E911E16A1DEEF3ED008A1A05 /* UIColor+decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+decorationColor.h"; sourceTree = "<group>"; };
+		E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+decorationColor.m"; sourceTree = "<group>"; };
 		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
 		E92226541DF3094900A1B808 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
@@ -112,6 +116,12 @@
 		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
 		E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		E9B56D071E3448D800E274BA /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		E9B56D081E3448D800E274BA /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		E9B56D091E3448D800E274BA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		E9B56D0C1E344DAD00E274BA /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
+		E9B56D0D1E344DAD00E274BA /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
+		E9B56D0F1E345C9700E274BA /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
 		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
 		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
@@ -187,8 +197,8 @@
 		E911E1681DEEF2CD008A1A05 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
-				E911E16A1DEEF3ED008A1A05 /* UIColor_decorationColor.h */,
-				E911E16C1DEEF456008A1A05 /* UIColor_decorationColor.m */,
+				E911E16A1DEEF3ED008A1A05 /* UIColor+decorationColor.h */,
+				E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */,
 				E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */,
 				E9A0ADA71DF3FB7000DDEEBE /* UIView+Border.h */,
 				E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */,
@@ -201,6 +211,7 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9B56D061E3448C500E274BA /* Register */,
 				E92E66431E2C828700A759BB /* PersonalInformation */,
 				E92E662B1E2C771800A759BB /* LostAndFound */,
 				E942A8591DF4F676001EEC19 /* Parcel */,
@@ -225,6 +236,8 @@
 				E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */,
 				E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */,
 				E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */,
+				E9B56D0C1E344DAD00E274BA /* LogoView.h */,
+				E9B56D0D1E344DAD00E274BA /* LogoView.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 				E942A84A1DF45A44001EEC19 /* SettingViewController.h */,
 				E942A84B1DF45A44001EEC19 /* SettingViewController.m */,
 				E942A8521DF46143001EEC19 /* SettingView.storyboard */,
+				E9B56D0F1E345C9700E274BA /* SettingViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -297,6 +311,16 @@
 				E942A85B1DF4F694001EEC19 /* ParcelViewController.m */,
 			);
 			path = Parcel;
+			sourceTree = "<group>";
+		};
+		E9B56D061E3448C500E274BA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E9B56D071E3448D800E274BA /* RegisterViewController.h */,
+				E9B56D081E3448D800E274BA /* RegisterViewController.m */,
+				E9B56D091E3448D800E274BA /* RegisterViewController.xib */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		E9E3FDBD1E2877D800F89821 /* Consumption */ = {
@@ -502,10 +526,12 @@
 			files = (
 				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
+				E9B56D101E345C9700E274BA /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,15 +620,17 @@
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
-				E911E16D1DEEF456008A1A05 /* UIColor_decorationColor.m in Sources */,
+				E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */,
 				E92E663F1E2C7C5300A759BB /* LostAndFoundModel.m in Sources */,
 				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
 				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
 				E92E664D1E2C895900A759BB /* ParcelModel.m in Sources */,
 				E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */,
+				E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
+				E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
 				E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */,

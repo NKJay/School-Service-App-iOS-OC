@@ -6,7 +6,7 @@
 //  Copyright © 2016年 NKjay. All rights reserved.
 //
 
-#import "UIColor_decorationColor.h"
+#import "UIColor+decorationColor.h"
 
 @implementation UIColor(decorationColor)
 

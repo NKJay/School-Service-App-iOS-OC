@@ -8,7 +8,7 @@
 
 #import <Masonry/Masonry.h>
 #import "NewsTableViewCell.h"
-#import "UIColor_decorationColor.h"
+#import "UIColor+decorationColor.h"
 
 @interface NewsTableViewCell()
 @property(strong,nonatomic)UIView *decorationDot,*separaterLine;
