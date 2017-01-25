@@ -51,11 +51,7 @@
         make.left.right.equalTo(self.backView);
         make.bottom.equalTo(self.view);
     }];
-//    [self.catagoryButton mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.left.right.equalTo(self.view);
-//        make.height.equalTo(@100);
-//        make.top.equalTo(@100);
-//    }];
+
 }
 
 #pragma mark 懒加载

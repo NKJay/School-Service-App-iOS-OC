@@ -17,57 +17,24 @@
 @property(weak,nonatomic) NSMutableArray* news;
 @property(assign,nonatomic) CGFloat screanHeight;
 @property(strong,nonatomic) MenuViewAnimationDelegate *animationDelegate;
-@property(strong,nonatomic) UITableView *tableView;
-//@property(strong,nonatomic) UIImageView *backgroundImageView;
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initializeView];
-    [self setupNavBar];
     // Do any additional setup after loading the view.
 }
 
-- (void)rightBarButtonDidClick {
-    UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];
-    
-    [self.navigationController pushViewController:settingViewController animated:true];
-}
-
-- (void)leftBarButtonDidClick {
+- (IBAction)toMenuView:(id)sender {
     UIViewController *menuViewController = [[MenuViewController alloc] init];
     menuViewController.transitioningDelegate = self.animationDelegate;
     menuViewController.modalPresentationStyle = UIModalPresentationCustom;
     [self presentViewController:menuViewController animated:true completion:nil];
 }
-
-- (void)initializeView{
-//    [self.view addSubview:self.backgroundImageView];
-    [self.view addSubview:self.tableView];
-    self.view.backgroundColor = [UIColor whiteColor];//[UIColor colorWithPatternImage:[UIImage imageNamed:@"back"]];
-}
-
-- (void)setupNavBar{
-    
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonDidClick)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonDidClick)];
-}
-
-
-
-#pragma mark 懒加载
-
-- (UITableView *)tableView{
-    if(!_tableView){
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _tableView.backgroundColor = [UIColor clearColor];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-    }
-    return _tableView;
+- (IBAction)toSettingView:(id)sender {
+    UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:settingViewController animated:true];
 }
 
 #pragma mark tableView dataSource&delegate
@@ -96,10 +63,8 @@
 
 
 - (NewsTableViewCell *)setupNewsCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"newsCell"];
-    if (!cell) {
-        cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"newsCell"];
-    }
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
+
     [cell setDecorationDotColor:indexPath.item];
     return cell;
 }
