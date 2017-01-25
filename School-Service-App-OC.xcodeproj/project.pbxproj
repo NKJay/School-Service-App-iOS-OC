@@ -34,7 +34,6 @@
 		E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D081E3448D800E274BA /* RegisterViewController.m */; };
 		E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D091E3448D800E274BA /* RegisterViewController.xib */; };
 		E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D0D1E344DAD00E274BA /* LogoView.m */; };
-		E9B56D101E345C9700E274BA /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D0F1E345C9700E274BA /* SettingViewController.xib */; };
 		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
 		E9CF397D1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */; };
@@ -49,6 +48,8 @@
 		E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */; };
 		E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */; };
 		E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */; };
+		E9FB557A1E387BDB00C43D39 /* UIView+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55791E387BDB00C43D39 /* UIView+IBExtension.m */; };
+		E9FB557C1E387DE400C43D39 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FB557B1E387DE400C43D39 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,7 +122,6 @@
 		E9B56D091E3448D800E274BA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		E9B56D0C1E344DAD00E274BA /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
 		E9B56D0D1E344DAD00E274BA /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
-		E9B56D0F1E345C9700E274BA /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
 		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
 		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
@@ -149,6 +149,9 @@
 		E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCUITests.m; sourceTree = "<group>"; };
 		E9E703F81DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FB55781E387BDB00C43D39 /* UIView+IBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBExtension.h"; sourceTree = "<group>"; };
+		E9FB55791E387BDB00C43D39 /* UIView+IBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBExtension.m"; sourceTree = "<group>"; };
+		E9FB557B1E387DE400C43D39 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +207,8 @@
 				E9A0ADA81DF3FB7000DDEEBE /* UIView+Border.m */,
 				E9CF397B1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.h */,
 				E9CF397C1E332E3D00B4A26B /* CALayer+borderColorFromUIColor.m */,
+				E9FB55781E387BDB00C43D39 /* UIView+IBExtension.h */,
+				E9FB55791E387BDB00C43D39 /* UIView+IBExtension.m */,
 			);
 			path = Catagory;
 			sourceTree = "<group>";
@@ -275,7 +280,6 @@
 				E942A84A1DF45A44001EEC19 /* SettingViewController.h */,
 				E942A84B1DF45A44001EEC19 /* SettingViewController.m */,
 				E942A8521DF46143001EEC19 /* SettingView.storyboard */,
-				E9B56D0F1E345C9700E274BA /* SettingViewController.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -300,6 +304,7 @@
 				E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */,
 				E942A8401DF45A18001EEC19 /* MenuViewController.h */,
 				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
+				E9FB557B1E387DE400C43D39 /* MenuViewController.xib */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -527,11 +532,11 @@
 				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
+				E9FB557C1E387DE400C43D39 /* MenuViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E92E66361E2C789600A759BB /* LostAndFoundView.storyboard in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
-				E9B56D101E345C9700E274BA /* SettingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +636,7 @@
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
 				E92226551DF3094900A1B808 /* ImageButton.m in Sources */,
 				E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */,
+				E9FB557A1E387BDB00C43D39 /* UIView+IBExtension.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
 				E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */,

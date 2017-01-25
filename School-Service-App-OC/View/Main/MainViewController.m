@@ -58,14 +58,7 @@
 
 
 #pragma mark 懒加载
-//- (UIImageView *)backgroundImageView{
-//    if (!_backgroundImageView) {
-//        _backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back"]];
-//        _backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
-//        _backgroundImageView.frame = self.view.bounds;
-//    }
-//    return _backgroundImageView;
-//}
+
 - (UITableView *)tableView{
     if(!_tableView){
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];

@@ -11,7 +11,7 @@
 @interface MenuButton()
 @property(assign,nonatomic)BOOL isSelected;
 @end
-
+IB_DESIGNABLE
 @implementation MenuButton
 
 - (instancetype)init

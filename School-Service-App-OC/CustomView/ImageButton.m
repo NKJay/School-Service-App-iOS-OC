@@ -7,7 +7,7 @@
 //
 
 #import "ImageButton.h"
-
+IB_DESIGNABLE
 @implementation ImageButton
 
 - (instancetype)initWithTitle:(NSString*) title andImageName:(NSString*) imageName
