@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface ImageButton : UIButton
-- (instancetype)initWithTitle:(NSString*) title andImageName:(NSString*) imageName;
 @end

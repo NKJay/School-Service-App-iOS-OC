@@ -9,14 +9,10 @@
 #import "MainViewController.h"
 #import "NewsTableViewCell.h"
 #import "MenuViewController.h"
-#import "MenuViewAnimationDelegate.h"
 #import "SettingViewController.h"
 
 @interface MainViewController()
-@property(weak,nonatomic) NSArray* lessons;
-@property(weak,nonatomic) NSMutableArray* news;
-@property(assign,nonatomic) CGFloat screanHeight;
-@property(strong,nonatomic) MenuViewAnimationDelegate *animationDelegate;
+@property(copy,nonatomic) NSMutableArray* news;
 @end
 
 @implementation MainViewController
@@ -27,9 +23,9 @@
 }
 
 - (IBAction)toMenuView:(id)sender {
-    UIViewController *menuViewController = [[MenuViewController alloc] init];
-    menuViewController.transitioningDelegate = self.animationDelegate;
+    MenuViewController *menuViewController = [[MenuViewController alloc] init];
     menuViewController.modalPresentationStyle = UIModalPresentationCustom;
+    menuViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:menuViewController animated:true completion:nil];
 }
 - (IBAction)toSettingView:(id)sender {

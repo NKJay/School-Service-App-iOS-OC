@@ -17,8 +17,6 @@
 		E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */; };
 		E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */; };
 		E942A8441DF45A19001EEC19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83A1DF45A18001EEC19 /* MainViewController.m */; };
-		E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */; };
-		E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */; };
 		E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8411DF45A18001EEC19 /* MenuViewController.m */; };
 		E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A84B1DF45A44001EEC19 /* SettingViewController.m */; };
 		E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E942A8521DF46143001EEC19 /* SettingView.storyboard */; };
@@ -32,6 +30,8 @@
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
 		E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */; };
 		E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */; };
+		E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E07FA71E3995E700ADD9E0 /* ConsumptionViewController.storyboard */; };
+		E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */; };
 		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
 		E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
@@ -91,10 +91,6 @@
 		E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundCheckinViewController.xib; sourceTree = "<group>"; };
 		E942A8391DF45A18001EEC19 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		E942A83A1DF45A18001EEC19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		E942A83C1DF45A18001EEC19 /* MenuViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimation.h; sourceTree = "<group>"; };
-		E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimation.m; sourceTree = "<group>"; };
-		E942A83E1DF45A18001EEC19 /* MenuViewAnimationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewAnimationDelegate.h; sourceTree = "<group>"; };
-		E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewAnimationDelegate.m; sourceTree = "<group>"; };
 		E942A8401DF45A18001EEC19 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		E942A8411DF45A18001EEC19 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		E942A84A1DF45A44001EEC19 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
@@ -118,6 +114,8 @@
 		E9D173B21E321DA60095DE7C /* PersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationViewController.h; sourceTree = "<group>"; };
 		E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationViewController.m; sourceTree = "<group>"; };
 		E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalInformationViewController.xib; sourceTree = "<group>"; };
+		E9E07FA71E3995E700ADD9E0 /* ConsumptionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConsumptionViewController.storyboard; sourceTree = "<group>"; };
+		E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParcelViewController.xib; sourceTree = "<group>"; };
 		E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionViewController.h; sourceTree = "<group>"; };
 		E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionViewController.m; sourceTree = "<group>"; };
 		E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
@@ -292,10 +290,6 @@
 		E942A83B1DF45A18001EEC19 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				E942A83C1DF45A18001EEC19 /* MenuViewAnimation.h */,
-				E942A83D1DF45A18001EEC19 /* MenuViewAnimation.m */,
-				E942A83E1DF45A18001EEC19 /* MenuViewAnimationDelegate.h */,
-				E942A83F1DF45A18001EEC19 /* MenuViewAnimationDelegate.m */,
 				E942A8401DF45A18001EEC19 /* MenuViewController.h */,
 				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
 				E9FB557B1E387DE400C43D39 /* MenuViewController.xib */,
@@ -308,6 +302,7 @@
 			children = (
 				E942A85A1DF4F694001EEC19 /* ParcelViewController.h */,
 				E942A85B1DF4F694001EEC19 /* ParcelViewController.m */,
+				E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */,
 			);
 			path = Parcel;
 			sourceTree = "<group>";
@@ -329,6 +324,7 @@
 				E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */,
 				E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */,
 				E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */,
+				E9E07FA71E3995E700ADD9E0 /* ConsumptionViewController.storyboard */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -496,6 +492,7 @@
 				TargetAttributes = {
 					E9E703CA1DEC417800F5C042 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 9N8EY233V7;
 						ProvisioningStyle = Automatic;
 					};
 					E9E703E61DEC417900F5C042 = {
@@ -538,10 +535,12 @@
 				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9FB560F1E389A7300C43D39 /* MainViewController.storyboard in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */,
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
 				E9FB557C1E387DE400C43D39 /* MenuViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
+				E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */,
 				E9FB560B1E38988300C43D39 /* LostAndFoundCollectionViewController.xib in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);
@@ -622,7 +621,6 @@
 				E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */,
 				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
 				E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */,
-				E942A8461DF45A19001EEC19 /* MenuViewAnimationDelegate.m in Sources */,
 				E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
 				E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */,
@@ -632,7 +630,6 @@
 				E9FB56001E388C5F00C43D39 /* LostAndFoundModel.m in Sources */,
 				E9FB56021E388C5F00C43D39 /* ParcelModel.m in Sources */,
 				E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */,
-				E942A8451DF45A19001EEC19 /* MenuViewAnimation.m in Sources */,
 				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
 				E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */,
 				E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */,
@@ -789,7 +786,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N8EY233V7;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -802,7 +801,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N8EY233V7;
 				INFOPLIST_FILE = "School-Service-App-OC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "u30.tech.School-Service-App-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

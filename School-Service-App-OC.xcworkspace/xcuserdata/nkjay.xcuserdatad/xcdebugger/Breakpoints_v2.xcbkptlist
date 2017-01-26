@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "School-Service-App-OC/CustomView/LogoView.m"
-            timestampString = "507018310.350308"
+            timestampString = "507093087.564422"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "-colors"
             landmarkType = "7">
          </BreakpointContent>

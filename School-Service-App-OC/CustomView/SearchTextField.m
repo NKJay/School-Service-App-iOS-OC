@@ -34,7 +34,6 @@
 }
 #pragma mark 监听事件
 - (void)textFieldDidBeginEditing{
-    NSLog(@"6666");
     [self.textField mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(@0);
     }];

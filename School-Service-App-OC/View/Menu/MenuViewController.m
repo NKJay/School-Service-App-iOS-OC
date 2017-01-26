@@ -14,6 +14,7 @@
 #import "RegisterViewController.h"
 
 @interface MenuViewController ()
+@property (weak, nonatomic) IBOutlet ImageButton *abc;
 
 @end
 
@@ -21,14 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"%@",NSStringFromUIEdgeInsets(_abc.imageEdgeInsets));
 
 }
+
 
 #pragma mark 点击事件
-- (void)closeButtonDidClick{
-    [self dismissViewControllerAnimated:true completion:nil];
-}
-
 - (void)consumptionButtonDidClick{
     [self presentViewController:[[ConsumptionViewController alloc] init] animated:true completion:nil];
 }
@@ -37,6 +36,9 @@
     UIViewController *vc = [[RegisterViewController alloc] init];
     [self presentViewController:vc animated:true completion:nil];
     
+}
+- (IBAction)close:(id)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 @end
