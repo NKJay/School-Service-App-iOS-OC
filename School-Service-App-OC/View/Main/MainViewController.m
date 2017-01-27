@@ -19,14 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)toMenuView:(id)sender {
     MenuViewController *menuViewController = [[MenuViewController alloc] init];
-    menuViewController.modalPresentationStyle = UIModalPresentationCustom;
-    menuViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:menuViewController animated:true completion:nil];
+    [[self navigationController] pushViewController:menuViewController animated:true];
 }
 - (IBAction)toSettingView:(id)sender {
     UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];

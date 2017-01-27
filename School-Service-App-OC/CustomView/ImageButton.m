@@ -36,13 +36,12 @@ IB_DESIGNABLE
 - (void)setupButton{
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:12];
+    self.titleLabel.textColor = [UIColor blackColor];
     
     CALayer *bottomBorder = [CALayer layer];
-    
-    bottomBorder.frame = CGRectMake(21.0f, self.frame.size.height, self.frame.size.width - 42, 1.0f);
-    
-    bottomBorder.backgroundColor = [UIColor colorWithRed:0.41 green:0.38 blue:0.35 alpha:1.00].CGColor;
-    
+    bottomBorder.frame = CGRectMake(21.0f, self.frame.size.height, self.frame.size.width - 42.0f, 1.0f);
+    NSLog(@"%@",NSStringFromCGRect(self.frame));
+    bottomBorder.backgroundColor = [UIColor blackColor].CGColor;
     [self.layer addSublayer:bottomBorder];
 }
 

@@ -14,15 +14,13 @@
 #import "RegisterViewController.h"
 
 @interface MenuViewController ()
-@property (weak, nonatomic) IBOutlet ImageButton *abc;
-
 @end
 
 @implementation MenuViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",NSStringFromUIEdgeInsets(_abc.imageEdgeInsets));
+    self.view.backgroundColor = [UIColor whiteColor];
 
 }
 
@@ -37,8 +35,4 @@
     [self presentViewController:vc animated:true completion:nil];
     
 }
-- (IBAction)close:(id)sender {
-    [self dismissViewControllerAnimated:true completion:nil];
-}
-
 @end
