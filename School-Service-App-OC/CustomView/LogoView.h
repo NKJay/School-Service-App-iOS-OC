@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LogoView : UIView
-//@property (nonatomic, assign)IBInspectable CGFloat cornerRadius;
+@property (nonatomic, weak) IBOutlet UIView *contentView;
 @end

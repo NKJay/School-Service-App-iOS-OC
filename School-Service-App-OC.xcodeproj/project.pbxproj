@@ -10,6 +10,7 @@
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
 		E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */; };
+		E912863D1E3F4535000E2C43 /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */; };
 		E92226551DF3094900A1B808 /* ImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* ImageButton.m */; };
 		E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */; };
 		E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */; };
@@ -41,7 +42,6 @@
 		E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E703DF1DEC417900F5C042 /* LaunchScreen.storyboard */; };
 		E9E703EC1DEC417900F5C042 /* School_Service_App_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703EB1DEC417900F5C042 /* School_Service_App_OCTests.m */; };
 		E9E703F71DEC417900F5C042 /* School_Service_App_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */; };
-		E9FB54B91E3A444E004D6565 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FB54B81E3A444E004D6565 /* MenuViewController.xib */; };
 		E9FB55FF1E388C5F00C43D39 /* ConsumptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55F81E388C5F00C43D39 /* ConsumptionModel.m */; };
 		E9FB56001E388C5F00C43D39 /* LostAndFoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FA1E388C5F00C43D39 /* LostAndFoundModel.m */; };
 		E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FC1E388C5F00C43D39 /* NewsModel.m */; };
@@ -77,6 +77,7 @@
 		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor+decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+decorationColor.h"; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+decorationColor.m"; sourceTree = "<group>"; };
+		E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		E922263A1DF2CA3C00A1B808 /* UIScreen_ScreenSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScreen_ScreenSize.h; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* ImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageButton.h; sourceTree = "<group>"; };
 		E92226541DF3094900A1B808 /* ImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageButton.m; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		E9E703F21DEC417900F5C042 /* School-Service-App-OCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School-Service-App-OCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703F61DEC417900F5C042 /* School_Service_App_OCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = School_Service_App_OCUITests.m; sourceTree = "<group>"; };
 		E9E703F81DEC417900F5C042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9FB54B81E3A444E004D6565 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		E9FB55F71E388C5F00C43D39 /* ConsumptionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionModel.h; sourceTree = "<group>"; };
 		E9FB55F81E388C5F00C43D39 /* ConsumptionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionModel.m; sourceTree = "<group>"; };
 		E9FB55F91E388C5F00C43D39 /* LostAndFoundModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundModel.h; sourceTree = "<group>"; };
@@ -290,9 +290,9 @@
 		E942A83B1DF45A18001EEC19 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				E9FB54B81E3A444E004D6565 /* MenuViewController.xib */,
 				E942A8401DF45A18001EEC19 /* MenuViewController.h */,
 				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
+				E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -539,8 +539,8 @@
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
-				E9FB54B91E3A444E004D6565 /* MenuViewController.xib in Resources */,
 				E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */,
+				E912863D1E3F4535000E2C43 /* MenuViewController.storyboard in Resources */,
 				E9FB560B1E38988300C43D39 /* LostAndFoundCollectionViewController.xib in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 			);

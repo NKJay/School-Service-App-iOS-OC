@@ -10,73 +10,96 @@
 #import "UIColor+decorationColor.h"
 
 @interface LogoView ()
-@property(nonatomic,strong) NSArray *colors;
-@property(nonatomic,strong) UIView *redDot,*orangeDot,*greenDot,*blueDot,*yellowDot,*purpleDot;
+@property(nonatomic,strong) NSArray *colors,*dotViews;
+@property(nonatomic,strong) UIView *redDot,*orangeDot,*greenDot,*blueDot,*yellowDot,*purpleDot,*backView;
 @end
+
 IB_DESIGNABLE
 @implementation LogoView
-
-//@dynamic cornerRadius;
-//- (void)setCornerRadius:(CGFloat)cornerRadius{
-//    self.layer.cornerRadius  = cornerRadius;
-//    self.layer.masksToBounds = YES;
-//}
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
     if (self) {
-//        [self setupLayer];
+        [self setupSubviews];
+        [self beginAnimation];
     }
     return self;
 }
 
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    [self setupLayer];
-}
-
-- (void)setupLayer{
-    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
-    replicatorLayer.bounds          = CGRectMake(0, 0, 50, 50);
-    replicatorLayer.anchorPoint = CGPointMake(0.5, 0.5);
-    replicatorLayer.position        =  self.center;
-    replicatorLayer.backgroundColor = [UIColor blackColor].CGColor;
-
-    [self.layer addSublayer:replicatorLayer];
-    
-    for (int i = 0; i < 6; i ++) {
-        CALayer *dotLayer        = [CALayer layer];
-        dotLayer.bounds          = CGRectMake(0, 0, 10, 10);
-        dotLayer.position        = CGPointMake(replicatorLayer.frame.size.height/2, replicatorLayer.frame.size.height/2);
-        dotLayer.cornerRadius    = 5.0;
-        UIColor *color = self.colors[i];
-        dotLayer.backgroundColor = color.CGColor;
-        CGFloat angel                     = 2* M_PI/ 6.0 * i;
-        dotLayer.anchorPoint = CGPointMake(0.5, 0);
-        dotLayer.transform = CATransform3DMakeRotation(angel, 0, 0, 1);
-        [replicatorLayer addSublayer:dotLayer];
+-(id)initWithFrame:(CGRect)frame{
+    if (self=[super initWithFrame:frame]) {
+        [self setupSubviews];
     }
-    
+    return self;
 }
 
+- (void)setupSubviews{
+    self.backView.center = CGPointMake(self.frame.size.width / 2.0, self.frame.size.height / 2.0);
+    [self addSubview:self.backView];
+    
+    ((UIView *)self.dotViews[0]).center = CGPointMake(20, 5);
+    ((UIView *)self.dotViews[1]).center = CGPointMake(6, 13);
+    ((UIView *)self.dotViews[2]).center = CGPointMake(6, 27);
+    ((UIView *)self.dotViews[3]).center = CGPointMake(34, 13);
+    ((UIView *)self.dotViews[4]).center = CGPointMake(34, 27);
+    ((UIView *)self.dotViews[5]).center = CGPointMake(20, 35);
+    for (int i = 0; i < self.dotViews.count; i++) {
+        [self.backView addSubview:self.dotViews[i]];
+    }
+}
 
-- (void)startAnimation{
-
+- (void)beginAnimation{
+    
+    CABasicAnimation *animation = [ CABasicAnimation
+                                   animationWithKeyPath: @"transform" ];
+    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+    
+    //围绕Z轴旋转，垂直与屏幕
+    animation.toValue = [ NSValue valueWithCATransform3D:
+                         
+                         CATransform3DMakeRotation(M_PI, 0.0, 0.0, 1.0) ];
+    animation.duration = 1.5;
+    //旋转效果累计，先转180度，接着再旋转180度，从而实现360旋转
+    animation.cumulative = YES;
+    animation.repeatCount = 1000;
+    
+    //在图片边缘添加一个像素的透明区域，去图片锯齿
+    
+    [self.backView.layer addAnimation:animation forKey:nil];
 }
 
 #pragma mark 懒加载
+
+- (UIView *)backView{
+    if (!_backView) {
+        _backView = [[UIView alloc] init];
+        _backView.backgroundColor = [UIColor clearColor];
+        _backView.bounds = CGRectMake(0, 0, 40, 40);
+    }
+    return _backView;
+}
+
+- (NSArray *)dotViews{
+    if (!_dotViews) {
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        for (int i = 0;  i < self.colors.count; i++) {
+            UIView *view = [[UIView alloc] init];
+            view.backgroundColor = self.colors[i];
+            view.bounds = CGRectMake(0, 0, 10, 10);
+            view.layer.cornerRadius = 5.0;
+            [array addObject:view];
+        }
+        _dotViews = array;
+    }
+    return _dotViews;
+}
+
 - (NSArray *)colors{
     if (!_colors) {
         _colors = [UIColor decorationColor];
-//        NSMutableArray *cgcolors = [NSMutableArray alloc];
-//        for (int i = 0; i < uicolors.count; i++) {
-//            UIColor *color = uicolors[i];
-//            [cgcolors addObject:color.CGColor];
-//        }
     }
-    return _colors;
+    return  _colors;
 }
-
 
 @end

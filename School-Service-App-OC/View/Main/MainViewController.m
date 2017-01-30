@@ -19,11 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UINavigationBar *navigationBar = self.navigationController.navigationBar;
+    [navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+    [navigationBar setShadowImage:[UIImage new]];
 }
 
 - (IBAction)toMenuView:(id)sender {
-    MenuViewController *menuViewController = [[MenuViewController alloc] init];
-    [[self navigationController] pushViewController:menuViewController animated:true];
+    UIViewController *menuViewController = [[UIStoryboard storyboardWithName:@"MenuViewController" bundle:nil]
+                                            instantiateInitialViewController];
+//    [[self navigationController] pushViewController:menuViewController animated:true];
+    [self presentViewController:menuViewController animated:true completion:nil];
 }
 - (IBAction)toSettingView:(id)sender {
     UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];

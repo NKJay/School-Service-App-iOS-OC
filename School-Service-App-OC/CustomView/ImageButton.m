@@ -10,15 +10,6 @@
 IB_DESIGNABLE
 @implementation ImageButton
 
-- (instancetype)initWithTitle:(NSString*) title andImageName:(NSString*) imageName
-{
-    self = [super init];
-    if (self) {
-        [self setupButton];
-    }
-    return self;
-}
-
 -(id)initWithCoder:(NSCoder *)aDecoder{
     if (self=[super initWithCoder:aDecoder]) {
         [self setupButton];
@@ -37,12 +28,6 @@ IB_DESIGNABLE
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:12];
     self.titleLabel.textColor = [UIColor blackColor];
-    
-    CALayer *bottomBorder = [CALayer layer];
-    bottomBorder.frame = CGRectMake(21.0f, self.frame.size.height, self.frame.size.width - 42.0f, 1.0f);
-    NSLog(@"%@",NSStringFromCGRect(self.frame));
-    bottomBorder.backgroundColor = [UIColor blackColor].CGColor;
-    [self.layer addSublayer:bottomBorder];
 }
 
 -(CGRect)titleRectForContentRect:(CGRect)contentRect{

@@ -7,10 +7,9 @@
 //
 
 #import "MenuViewController.h"
-#import <Masonry/Masonry.h>
-#import "ImageButton.h"
 #import "ConsumptionViewController.h"
 #import "LostAndFoundCheckinViewController.h"
+#import "PersonalInformationViewController.h"
 #import "RegisterViewController.h"
 
 @interface MenuViewController ()
@@ -20,19 +19,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor clearColor]];
 }
 
 
-#pragma mark 点击事件
-- (void)consumptionButtonDidClick{
-    [self presentViewController:[[ConsumptionViewController alloc] init] animated:true completion:nil];
+#pragma mark Action
+- (IBAction)toPersonalView:(id)sender {
+    [self.navigationController pushViewController:[[PersonalInformationViewController alloc] init] animated:true];
 }
-
-- (void)avaterButtonDidClick{
-    UIViewController *vc = [[RegisterViewController alloc] init];
-    [self presentViewController:vc animated:true completion:nil];
-    
+- (IBAction)toLostAndFoundView:(id)sender {
+    [self.navigationController pushViewController:[[LostAndFoundCheckinViewController alloc] init] animated:true];
+}
+- (IBAction)toSearchView:(id)sender {
+    [self.navigationController pushViewController:[[PersonalInformationViewController alloc] init] animated:true];
+}
+- (IBAction)toCosumptionView:(id)sender {
+    [self.navigationController pushViewController:[[ConsumptionViewController alloc] init] animated:true];
+}
+- (IBAction)toRepairView:(id)sender {
+    [self.navigationController pushViewController:[[PersonalInformationViewController alloc] init] animated:true];
+}
+- (IBAction)toEventView:(id)sender {
+    [self.navigationController pushViewController:[[RegisterViewController alloc] init] animated:true];
 }
 @end

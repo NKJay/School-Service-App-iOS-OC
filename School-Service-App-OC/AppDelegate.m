@@ -28,12 +28,17 @@
     [UINavigationBar appearance].backgroundColor = [UIColor whiteColor];
     [UINavigationBar appearance].tintColor = [UIColor blackColor];
     [UINavigationBar appearance].translucent = true;
+    
+
 }
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainViewController" bundle:nil]
                                             instantiateInitialViewController];
+    
+
+    
     self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];
 }

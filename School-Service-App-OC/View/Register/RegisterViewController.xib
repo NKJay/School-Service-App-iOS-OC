@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUN-GU-8Tv" customClass="IBButtonExtension">
-                    <rect key="frame" x="141.5" y="588" width="91" height="32"/>
+                    <rect key="frame" x="142" y="588" width="91" height="32"/>
                     <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="91" id="E69-K2-L8M"/>
@@ -108,10 +108,13 @@
                         <action selector="cancelButtonDidClick:" destination="-1" eventType="touchUpInside" id="tzb-m1-WT3"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEP-in-0zf">
-                    <rect key="frame" x="67" y="33" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEP-in-0zf" customClass="LogoView">
+                    <rect key="frame" x="87" y="33" width="200" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="AzO-w2-EcB"/>
+                        <constraint firstAttribute="height" constant="128" id="bcZ-cJ-Cso"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                             <real key="value" value="20"/>
@@ -146,6 +149,7 @@
                 <constraint firstItem="jLI-oj-Bwt" firstAttribute="height" secondItem="R2Y-Gc-28B" secondAttribute="height" id="Le7-wG-cxT"/>
                 <constraint firstItem="jLI-oj-Bwt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="PNj-ah-7av"/>
                 <constraint firstItem="m1z-Qf-FIV" firstAttribute="top" secondItem="axL-uK-tP7" secondAttribute="bottom" constant="10" id="RLE-CT-IbR"/>
+                <constraint firstItem="XEP-in-0zf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YS0-MF-fT4"/>
                 <constraint firstAttribute="trailing" secondItem="giI-92-jFY" secondAttribute="trailing" constant="33" id="ehv-hW-1DX"/>
                 <constraint firstItem="axL-uK-tP7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="fqf-NP-seb"/>
                 <constraint firstItem="giI-92-jFY" firstAttribute="top" secondItem="kU0-m6-TBA" secondAttribute="bottom" constant="10" id="gMM-wA-cuL"/>
@@ -156,6 +160,7 @@
                 <constraint firstItem="giI-92-jFY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="o19-Uy-8SC"/>
                 <constraint firstItem="n13-Yu-eBH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="ocw-gX-i2P"/>
                 <constraint firstItem="aUN-GU-8Tv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pe8-2t-i40"/>
+                <constraint firstItem="XEP-in-0zf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="qMH-YA-PqC"/>
                 <constraint firstItem="G03-oo-IoD" firstAttribute="top" secondItem="m1z-Qf-FIV" secondAttribute="bottom" constant="14" id="qbG-uS-Xdv"/>
                 <constraint firstAttribute="trailing" secondItem="S3Z-bD-i0O" secondAttribute="trailing" constant="20" id="w53-jN-2kL"/>
                 <constraint firstItem="jLI-oj-Bwt" firstAttribute="top" secondItem="G03-oo-IoD" secondAttribute="bottom" constant="10" id="w5o-bh-gBr"/>
