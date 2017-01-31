@@ -11,6 +11,7 @@
 #import "LostAndFoundCheckinViewController.h"
 #import "PersonalInformationViewController.h"
 #import "RegisterViewController.h"
+#import "RepairViewController.h"
 
 @interface MenuViewController ()
 @end
@@ -39,7 +40,7 @@
     [self.navigationController pushViewController:[[ConsumptionViewController alloc] init] animated:true];
 }
 - (IBAction)toRepairView:(id)sender {
-    [self.navigationController pushViewController:[[PersonalInformationViewController alloc] init] animated:true];
+    [self.navigationController pushViewController:[[RepairViewController alloc] init] animated:true];
 }
 - (IBAction)toEventView:(id)sender {
     [self.navigationController pushViewController:[[RegisterViewController alloc] init] animated:true];

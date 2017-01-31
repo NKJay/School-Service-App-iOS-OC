@@ -24,6 +24,9 @@
 		E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */; };
 		E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85B1DF4F694001EEC19 /* ParcelViewController.m */; };
 		E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E942A85E1DF4F751001EEC19 /* MenuButton.m */; };
+		E96088101E409055001DD41A /* RepairViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E960880E1E409055001DD41A /* RepairViewController.m */; };
+		E96088111E409055001DD41A /* RepairViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E960880F1E409055001DD41A /* RepairViewController.xib */; };
+		E96088141E40915F001DD41A /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E96088131E40915F001DD41A /* CustomTextField.m */; };
 		E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D081E3448D800E274BA /* RegisterViewController.m */; };
 		E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D091E3448D800E274BA /* RegisterViewController.xib */; };
 		E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D0D1E344DAD00E274BA /* LogoView.m */; };
@@ -103,6 +106,11 @@
 		E942A85B1DF4F694001EEC19 /* ParcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelViewController.m; sourceTree = "<group>"; };
 		E942A85D1DF4F751001EEC19 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
 		E942A85E1DF4F751001EEC19 /* MenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuButton.m; sourceTree = "<group>"; };
+		E960880D1E409055001DD41A /* RepairViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepairViewController.h; sourceTree = "<group>"; };
+		E960880E1E409055001DD41A /* RepairViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepairViewController.m; sourceTree = "<group>"; };
+		E960880F1E409055001DD41A /* RepairViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RepairViewController.xib; sourceTree = "<group>"; };
+		E96088121E40915F001DD41A /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		E96088131E40915F001DD41A /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 		E9B56D071E3448D800E274BA /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		E9B56D081E3448D800E274BA /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		E9B56D091E3448D800E274BA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E960880C1E409045001DD41A /* Repair */,
 				E9B56D061E3448C500E274BA /* Register */,
 				E92E66431E2C828700A759BB /* PersonalInformation */,
 				E92E662B1E2C771800A759BB /* LostAndFound */,
@@ -234,6 +243,8 @@
 				E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */,
 				E9B56D0C1E344DAD00E274BA /* LogoView.h */,
 				E9B56D0D1E344DAD00E274BA /* LogoView.m */,
+				E96088121E40915F001DD41A /* CustomTextField.h */,
+				E96088131E40915F001DD41A /* CustomTextField.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -305,6 +316,16 @@
 				E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */,
 			);
 			path = Parcel;
+			sourceTree = "<group>";
+		};
+		E960880C1E409045001DD41A /* Repair */ = {
+			isa = PBXGroup;
+			children = (
+				E960880D1E409055001DD41A /* RepairViewController.h */,
+				E960880E1E409055001DD41A /* RepairViewController.m */,
+				E960880F1E409055001DD41A /* RepairViewController.xib */,
+			);
+			path = Repair;
 			sourceTree = "<group>";
 		};
 		E9B56D061E3448C500E274BA /* Register */ = {
@@ -535,6 +556,7 @@
 				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9FB560F1E389A7300C43D39 /* MainViewController.storyboard in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
+				E96088111E409055001DD41A /* RepairViewController.xib in Resources */,
 				E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */,
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
@@ -624,6 +646,7 @@
 				E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
 				E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */,
+				E96088141E40915F001DD41A /* CustomTextField.m in Sources */,
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
 				E942A85F1DF4F751001EEC19 /* MenuButton.m in Sources */,
@@ -634,6 +657,7 @@
 				E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */,
 				E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */,
 				E9FB56091E388C6800C43D39 /* UIViewExtension.m in Sources */,
+				E96088101E409055001DD41A /* RepairViewController.m in Sources */,
 				E9FB55FF1E388C5F00C43D39 /* ConsumptionModel.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
