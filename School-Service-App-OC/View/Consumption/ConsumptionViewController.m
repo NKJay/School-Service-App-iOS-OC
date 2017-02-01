@@ -10,16 +10,17 @@
 #import "ConsumptionTableViewCell.h"
 
 @interface ConsumptionViewController ()
-
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ConsumptionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerClass:[ConsumptionTableViewCell class] forCellReuseIdentifier:@"itemCell"];
 }
 
+
+#pragma mark tableView dataSource & delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 2;
 }
@@ -29,17 +30,15 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return indexPath.item == 0 ? 96.0 : 69.0 ;
+    return 69.0 ;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    UITableViewCell *cell;
-//    if (indexPath.section != 0) {
-        ConsumptionTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"itemCell"];
-        
-//    } else{
-//        
-//    }
+    static NSString *identifier = @"cell";
+    ConsumptionTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"ConsumptionTableViewCell" owner:nil options:nil] firstObject];
+    }
     return cell;
 }
 

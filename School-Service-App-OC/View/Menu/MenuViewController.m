@@ -12,6 +12,7 @@
 #import "PersonalInformationViewController.h"
 #import "RegisterViewController.h"
 #import "RepairViewController.h"
+#import "ParcelViewController.h"
 
 @interface MenuViewController ()
 @end
@@ -37,12 +38,13 @@
     [self.navigationController pushViewController:[[PersonalInformationViewController alloc] init] animated:true];
 }
 - (IBAction)toCosumptionView:(id)sender {
-    [self.navigationController pushViewController:[[ConsumptionViewController alloc] init] animated:true];
+    UIViewController *consumptionViewController = [[UIStoryboard storyboardWithName:@"ConsumptionViewController" bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:consumptionViewController animated:true];
 }
 - (IBAction)toRepairView:(id)sender {
     [self.navigationController pushViewController:[[RepairViewController alloc] init] animated:true];
 }
 - (IBAction)toEventView:(id)sender {
-    [self.navigationController pushViewController:[[RegisterViewController alloc] init] animated:true];
+    [self.navigationController pushViewController:[[ParcelViewController alloc] init] animated:true];
 }
 @end

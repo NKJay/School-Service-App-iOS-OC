@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchTextField : UIView
-@property(weak,nonatomic)NSString* placeholder;
+@interface SearchTextField : UITextField
 @end

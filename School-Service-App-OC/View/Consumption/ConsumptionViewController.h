@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConsumptionViewController : UITableViewController
+@interface ConsumptionViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

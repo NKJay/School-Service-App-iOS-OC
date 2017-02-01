@@ -25,6 +25,7 @@
     [navigationBar setShadowImage:[UIImage new]];
 }
 
+#pragma mark Action
 - (IBAction)toMenuView:(id)sender {
     UIViewController *menuViewController = [[UIStoryboard storyboardWithName:@"MenuViewController" bundle:nil]
                                             instantiateInitialViewController];
@@ -62,8 +63,15 @@
 
 
 - (NewsTableViewCell *)setupNewsCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NewsCell"];
+    
+    static NSString *identifier = @"cell";
+    
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 
+    if (!cell) {
+        cell = [[[NSBundle mainBundle] loadNibNamed:@"NewsTableViewCell" owner:nil options:nil] firstObject];
+    }
+    
     [cell setDecorationDotColor:indexPath.item];
     return cell;
 }

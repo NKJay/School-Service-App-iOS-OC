@@ -10,20 +10,26 @@
 #import "SearchTextField.h"
 
 @interface SearchTextField()
-@property(strong,nonatomic)UITextField *textField;
 @property(strong,nonatomic)UILabel *placeholderLabel;
 @property(strong,nonatomic)UIImageView *searchIcon;
 @end
-
+IB_DESIGNABLE
 @implementation SearchTextField
 
-- (instancetype)init
+- (instancetype)initWithFrame:(CGRect)frame
 {
-    self = [super init];
+    self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidBeginEditing) name:UITextFieldTextDidBeginEditingNotification object:_textField];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidEndEditing) name:UITextFieldTextDidEndEditingNotification object:_textField];
+        [self setupSubViews];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self setupSubViews];
     }
     return self;
 }
@@ -34,61 +40,43 @@
 }
 #pragma mark 监听事件
 - (void)textFieldDidBeginEditing{
-    [self.textField mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(@0);
-    }];
-    
     [UIView animateWithDuration:0.5 animations:^{
         self.placeholderLabel.alpha = 0;
     }];
 }
 
 - (void)textFieldDidEndEditing{
-    
+    if (self.text.length == 0) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.placeholderLabel.alpha = 1;
+        }];
+    }
 }
 
 #pragma mark 布局
-- (void)layoutSubviews{
-    [super layoutSubviews];
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        self.layer.cornerRadius = self.bounds.size.height / 2.0;
-        [self clipsToBounds];
-        [self setupSubViews];
-    });
-}
 
 -(void)setupSubViews{
-    [self addSubview:self.textField];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidBeginEditing) name:UITextFieldTextDidBeginEditingNotification object:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldDidEndEditing) name:UITextFieldTextDidEndEditingNotification object:self];
+    
+    self.textAlignment = NSTextAlignmentCenter;
+    self.backgroundColor = [UIColor whiteColor];
+    self.borderStyle = UITextBorderStyleNone;
+    
     [self insertSubview:self.placeholderLabel atIndex:0];
     
-    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self);
-    }];
     [self.placeholderLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
     }];
 }
 
-#pragma mark 点击事件
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self endEditing:true];
-}
-
 #pragma mark 懒加载
-- (UITextField *)textField{
-    if (!_textField) {
-        _textField = [[UITextField alloc] init];
-        _textField.textAlignment = NSTextAlignmentCenter;
-        _textField.backgroundColor = [UIColor clearColor];
-    }
-    return _textField;
-}
 
 - (UILabel *)placeholderLabel{
     if (!_placeholderLabel) {
         _placeholderLabel = [[UILabel alloc] init];
-        _placeholderLabel.text = _placeholder;
+        _placeholderLabel.text = @"包裹查询";
         _placeholderLabel.textColor = [UIColor blackColor];
         _placeholderLabel.textAlignment = NSTextAlignmentCenter;
         _placeholderLabel.font = [UIFont systemFontOfSize:9];

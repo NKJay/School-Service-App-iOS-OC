@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Ta-Zv-M0s">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--消费明细-->
         <scene sceneID="M2q-6V-96Q">
             <objects>
-                <viewController id="7Ta-Zv-M0s" sceneMemberID="viewController">
+                <viewController title="消费明细" id="7Ta-Zv-M0s" customClass="ConsumptionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RWu-hL-GPh"/>
                         <viewControllerLayoutGuide type="bottom" id="bOX-BG-qk8"/>
@@ -74,18 +74,34 @@
                                     <constraint firstAttribute="trailing" secondItem="TRm-u4-QRe" secondAttribute="trailing" constant="34" id="yop-3U-g8b"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W39-dh-12q">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Ta-Zv-M0s" id="fWv-5e-qBj"/>
+                                    <outlet property="delegate" destination="7Ta-Zv-M0s" id="lgs-jV-yQ7"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bOX-BG-qk8" firstAttribute="top" secondItem="W39-dh-12q" secondAttribute="bottom" id="ApE-Is-maX"/>
+                            <constraint firstItem="W39-dh-12q" firstAttribute="leading" secondItem="cOy-6h-kLf" secondAttribute="leading" id="PXT-mX-kmg"/>
+                            <constraint firstAttribute="trailing" secondItem="W39-dh-12q" secondAttribute="trailing" id="ZNg-Ye-LsN"/>
                             <constraint firstItem="fPH-hE-8UD" firstAttribute="top" secondItem="RWu-hL-GPh" secondAttribute="bottom" id="eQ7-75-vCE"/>
+                            <constraint firstItem="W39-dh-12q" firstAttribute="top" secondItem="fPH-hE-8UD" secondAttribute="bottom" id="efp-j9-Jjq"/>
                             <constraint firstAttribute="trailing" secondItem="fPH-hE-8UD" secondAttribute="trailing" id="qpg-mr-jbm"/>
                             <constraint firstItem="fPH-hE-8UD" firstAttribute="leading" secondItem="cOy-6h-kLf" secondAttribute="leading" id="v39-xo-rRm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="W39-dh-12q" id="uFW-hr-VBc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrI-g9-nsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-519.20000000000005" y="159.67016491754123"/>
+            <point key="canvasLocation" x="-519.20000000000005" y="158.77061469265368"/>
         </scene>
     </scenes>
 </document>

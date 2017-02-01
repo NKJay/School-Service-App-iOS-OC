@@ -1,5 +1,5 @@
 //
-//  ConsumptionTableViewCell.h
+//  LoginViewController.h
 //  School-Service-App-OC
 //
 //  Created by NKJay on 2017/2/1.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConsumptionTableViewCell : UITableViewCell
+@interface LoginViewController : UIViewController
 
 @end

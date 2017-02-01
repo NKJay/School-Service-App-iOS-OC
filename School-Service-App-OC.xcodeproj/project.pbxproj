@@ -30,6 +30,11 @@
 		E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D081E3448D800E274BA /* RegisterViewController.m */; };
 		E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B56D091E3448D800E274BA /* RegisterViewController.xib */; };
 		E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B56D0D1E344DAD00E274BA /* LogoView.m */; };
+		E9B609AF1E41E917006AE161 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B609AD1E41E917006AE161 /* ConsumptionTableViewCell.m */; };
+		E9B609B01E41E917006AE161 /* ConsumptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609AE1E41E917006AE161 /* ConsumptionTableViewCell.xib */; };
+		E9B609B51E41ECE0006AE161 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B609B31E41ECE0006AE161 /* LoginViewController.m */; };
+		E9B609B61E41ECE0006AE161 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609B41E41ECE0006AE161 /* LoginViewController.xib */; };
+		E9B609B81E41F02D006AE161 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609B71E41F02D006AE161 /* NewsTableViewCell.xib */; };
 		E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */; };
 		E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9A0501E31B3CA00B0483F /* PickerTextFieldAnimation.m */; };
 		E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */; };
@@ -37,7 +42,6 @@
 		E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E07FA71E3995E700ADD9E0 /* ConsumptionViewController.storyboard */; };
 		E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */; };
 		E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */; };
-		E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */; };
 		E9E703D01DEC417800F5C042 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703CF1DEC417800F5C042 /* main.m */; };
 		E9E703D31DEC417800F5C042 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E703D21DEC417800F5C042 /* AppDelegate.m */; };
 		E9E703DC1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9E703DA1DEC417900F5C042 /* School_Service_App_OC.xcdatamodeld */; };
@@ -116,6 +120,13 @@
 		E9B56D091E3448D800E274BA /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		E9B56D0C1E344DAD00E274BA /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
 		E9B56D0D1E344DAD00E274BA /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
+		E9B609AC1E41E917006AE161 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
+		E9B609AD1E41E917006AE161 /* ConsumptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionTableViewCell.m; sourceTree = "<group>"; };
+		E9B609AE1E41E917006AE161 /* ConsumptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsumptionTableViewCell.xib; sourceTree = "<group>"; };
+		E9B609B21E41ECE0006AE161 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E9B609B31E41ECE0006AE161 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E9B609B41E41ECE0006AE161 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E9B609B71E41F02D006AE161 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		E9C9A04A1E31B19800B0483F /* TextFieldPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerViewController.h; sourceTree = "<group>"; };
 		E9C9A04B1E31B19800B0483F /* TextFieldPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerViewController.m; sourceTree = "<group>"; };
 		E9C9A04F1E31B3CA00B0483F /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
@@ -127,8 +138,6 @@
 		E9E07FA91E3996B500ADD9E0 /* ParcelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParcelViewController.xib; sourceTree = "<group>"; };
 		E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionViewController.h; sourceTree = "<group>"; };
 		E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionViewController.m; sourceTree = "<group>"; };
-		E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsumptionTableViewCell.h; sourceTree = "<group>"; };
-		E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsumptionTableViewCell.m; sourceTree = "<group>"; };
 		E9E703CB1DEC417800F5C042 /* School-Service-App-OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School-Service-App-OC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E703CF1DEC417800F5C042 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E703D11DEC417800F5C042 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +224,7 @@
 		E92226421DF3091700A1B808 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9B609B11E41ECCD006AE161 /* Login */,
 				E960880C1E409045001DD41A /* Repair */,
 				E9B56D061E3448C500E274BA /* Register */,
 				E92E66431E2C828700A759BB /* PersonalInformation */,
@@ -293,6 +303,7 @@
 				E942A83A1DF45A18001EEC19 /* MainViewController.m */,
 				E942A8561DF4894F001EEC19 /* NewsTableViewCell.h */,
 				E942A8571DF4894F001EEC19 /* NewsTableViewCell.m */,
+				E9B609B71E41F02D006AE161 /* NewsTableViewCell.xib */,
 				E9FB560E1E389A7300C43D39 /* MainViewController.storyboard */,
 			);
 			path = Main;
@@ -338,14 +349,25 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		E9B609B11E41ECCD006AE161 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E9B609B21E41ECE0006AE161 /* LoginViewController.h */,
+				E9B609B31E41ECE0006AE161 /* LoginViewController.m */,
+				E9B609B41E41ECE0006AE161 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		E9E3FDBD1E2877D800F89821 /* Consumption */ = {
 			isa = PBXGroup;
 			children = (
 				E9E3FDBE1E28781200F89821 /* ConsumptionViewController.h */,
 				E9E3FDBF1E28781200F89821 /* ConsumptionViewController.m */,
-				E9E3FDC11E28786200F89821 /* ConsumptionTableViewCell.h */,
-				E9E3FDC21E28786200F89821 /* ConsumptionTableViewCell.m */,
 				E9E07FA71E3995E700ADD9E0 /* ConsumptionViewController.storyboard */,
+				E9B609AC1E41E917006AE161 /* ConsumptionTableViewCell.h */,
+				E9B609AD1E41E917006AE161 /* ConsumptionTableViewCell.m */,
+				E9B609AE1E41E917006AE161 /* ConsumptionTableViewCell.xib */,
 			);
 			path = Consumption;
 			sourceTree = "<group>";
@@ -557,6 +579,7 @@
 				E9FB560F1E389A7300C43D39 /* MainViewController.storyboard in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
 				E96088111E409055001DD41A /* RepairViewController.xib in Resources */,
+				E9B609B81E41F02D006AE161 /* NewsTableViewCell.xib in Resources */,
 				E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */,
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
@@ -565,6 +588,8 @@
 				E912863D1E3F4535000E2C43 /* MenuViewController.storyboard in Resources */,
 				E9FB560B1E38988300C43D39 /* LostAndFoundCollectionViewController.xib in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
+				E9B609B61E41ECE0006AE161 /* LoginViewController.xib in Resources */,
+				E9B609B01E41E917006AE161 /* ConsumptionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +670,7 @@
 				E9C9A04D1E31B19800B0483F /* TextFieldPickerViewController.m in Sources */,
 				E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
+				E9B609B51E41ECE0006AE161 /* LoginViewController.m in Sources */,
 				E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */,
 				E96088141E40915F001DD41A /* CustomTextField.m in Sources */,
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
@@ -657,6 +683,7 @@
 				E9C9A0511E31B3CA00B0483F /* PickerTextFieldAnimation.m in Sources */,
 				E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */,
 				E9FB56091E388C6800C43D39 /* UIViewExtension.m in Sources */,
+				E9B609AF1E41E917006AE161 /* ConsumptionTableViewCell.m in Sources */,
 				E96088101E409055001DD41A /* RepairViewController.m in Sources */,
 				E9FB55FF1E388C5F00C43D39 /* ConsumptionModel.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
@@ -666,7 +693,6 @@
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
 				E9FB56081E388C6800C43D39 /* UIView+IBExtention.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
-				E9E3FDC31E28786200F89821 /* ConsumptionTableViewCell.m in Sources */,
 				E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
