@@ -19,20 +19,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self setupNavigationBar];
+}
+
+#pragma mark setupView
+- (void)setupNavigationBar{
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
     [navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
-    [navigationBar setShadowImage:[UIImage new]];
+    [navigationBar setShadowImage:[[UIImage alloc] init]];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(toMenuView:)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings_icon"] style:UIBarButtonItemStylePlain target:self action:@selector(toMenuView:)];
 }
 
 #pragma mark Action
-- (IBAction)toMenuView:(id)sender {
-    UIViewController *menuViewController = [[UIStoryboard storyboardWithName:@"MenuViewController" bundle:nil]
-                                            instantiateInitialViewController];
-//    [[self navigationController] pushViewController:menuViewController animated:true];
+- (void)toMenuView:(id)sender {
+    UIViewController *menuViewController = [[UINavigationController alloc] initWithRootViewController:[[MenuViewController alloc] init]];
     [self presentViewController:menuViewController animated:true completion:nil];
 }
-- (IBAction)toSettingView:(id)sender {
+- (void)toSettingView:(id)sender {
     UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:settingViewController animated:true];
 }

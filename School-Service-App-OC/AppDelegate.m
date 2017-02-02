@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "ParcelViewController.h"
+#import "RegisterViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,12 +35,13 @@
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainViewController" bundle:nil]
-                                            instantiateInitialViewController];
+//    UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainViewController" bundle:nil]
+//                                            instantiateInitialViewController];
     
 
-    
-    self.window.rootViewController = mainViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc]
+                                                    initWithRootViewController:[[MainViewController alloc] init]];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 }
 

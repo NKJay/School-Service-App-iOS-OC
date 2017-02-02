@@ -81,17 +81,5 @@
             </constraints>
             <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
-        <viewController id="8Pb-Gf-udl">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="EWa-bt-4Xn"/>
-                <viewControllerLayoutGuide type="bottom" id="J9g-3q-TJl"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="wcP-jE-W5K">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            </view>
-            <point key="canvasLocation" x="-401" y="52"/>
-        </viewController>
     </objects>
 </document>

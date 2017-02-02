@@ -6,30 +6,42 @@
 //  Copyright © 2016年 NKjay. All rights reserved.
 //
 
-#import "ImageButton.h"
-IB_DESIGNABLE
-@implementation ImageButton
+#import "MenuImageButton.h"
 
--(id)initWithCoder:(NSCoder *)aDecoder{
-    if (self=[super initWithCoder:aDecoder]) {
-        [self setupButton];
-    }
-    return self;
-}
+@implementation MenuImageButton
 
 -(id)initWithFrame:(CGRect)frame{
     if (self=[super initWithFrame:frame]) {
         [self setupButton];
+        
     }
     return self;
 }
 
+-(void)setTitle:(NSString *)title{
+    [self setTitle:title forState:UIControlStateNormal];
+}
+
+- (void)setImage:(UIImage *)image{
+    [self setImage:image forState:UIControlStateNormal];
+}
+
+
 - (void)setupButton{
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:12];
-    self.titleLabel.textColor = [UIColor blackColor];
+    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self setTintColor:[UIColor clearColor]];
 }
-
+//模仿系统的点击变灰效果
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    self.alpha = 0.5;
+//}
+//
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+//    self.alpha = 1;
+//}
+//重新布局图片和标题位置
 -(CGRect)titleRectForContentRect:(CGRect)contentRect{
     return CGRectMake(0, 64, contentRect.size.width, 12);
 }

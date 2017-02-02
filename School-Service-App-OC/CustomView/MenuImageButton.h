@@ -1,5 +1,5 @@
 //
-//  UIScreen_ScreanSize.h
+//  ImageButton.h
 //  School-Service-App-OC
 //
 //  Created by NKjay on 2016/12/3.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIScreen ()
-+ (CGRect) screenSize;
+@interface MenuImageButton : UIButton
+@property(nonatomic,weak)NSString *title;
+@property(nonatomic,weak)UIImage *image;
 @end
