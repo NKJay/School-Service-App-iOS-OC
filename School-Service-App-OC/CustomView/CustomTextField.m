@@ -39,6 +39,7 @@ IB_DESIGNABLE
     UIView *blankView = [[UIView alloc] initWithFrame:CGRectMake(self.frame.origin.x,self.frame.origin.y,20, self.frame.size.height)];
     self.leftView = blankView;
     self.leftViewMode =UITextFieldViewModeAlways;
+    self.tintColor = [UIColor whiteColor];
 }
 
 

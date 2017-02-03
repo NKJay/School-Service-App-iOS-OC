@@ -23,6 +23,16 @@
 }
 
 #pragma mark setupView
+- (UIImage *)convertViewToImage
+{
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
+    UIImage *screenshot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return screenshot;
+}
+
 - (void)setupNavigationBar{
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
     [navigationBar setBackgroundImage:[UIImage imageNamed:@""] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
@@ -34,8 +44,15 @@
 
 #pragma mark Action
 - (void)toMenuView:(id)sender {
-    UIViewController *menuViewController = [[UINavigationController alloc] initWithRootViewController:[[MenuViewController alloc] init]];
-    [self presentViewController:menuViewController animated:true completion:nil];
+    MenuViewController *menuViewController = [[MenuViewController alloc] init];
+    menuViewController.backView = [self.view snapshotViewAfterScreenUpdates:true];
+//    menuViewController.backViewImage = [self convertViewToImage];
+    
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:menuViewController];
+//    navController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    navController.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:navController animated:true completion:nil];
 }
 - (void)toSettingView:(id)sender {
     UIViewController *settingViewController = [[UIStoryboard storyboardWithName:@"SettingView" bundle:nil] instantiateInitialViewController];

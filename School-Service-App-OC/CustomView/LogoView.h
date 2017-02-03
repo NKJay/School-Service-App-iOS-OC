@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface LogoView : UIView
-@property (nonatomic, weak) IBOutlet UIView *contentView;
 @end

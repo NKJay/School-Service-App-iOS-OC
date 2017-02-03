@@ -31,16 +31,17 @@
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
     self.titleLabel.font = [UIFont systemFontOfSize:12];
     [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [self setTintColor:[UIColor clearColor]];
 }
 //模仿系统的点击变灰效果
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    self.alpha = 0.5;
-//}
-//
-//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    self.alpha = 1;
-//}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    self.alpha = 0.5;
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
+    self.alpha = 1;
+}
 //重新布局图片和标题位置
 -(CGRect)titleRectForContentRect:(CGRect)contentRect{
     return CGRectMake(0, 64, contentRect.size.width, 12);

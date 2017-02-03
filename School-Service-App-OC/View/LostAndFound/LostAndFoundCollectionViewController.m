@@ -7,6 +7,7 @@
 //
 
 #import "LostAndFoundCollectionViewController.h"
+#import "LostAndFoundCollectionViewLayout.h"
 
 @interface LostAndFoundCollectionViewController ()
 
@@ -18,14 +19,12 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
+    self.title = @"失物招领";
+    self.collectionView.backgroundColor = [UIColor colorWithRed:0.95 green:0.95 blue:0.96 alpha:1.00];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    [self.collectionView setCollectionViewLayout:[[LostAndFoundCollectionViewLayout alloc] init]];
+
 }
 
 #pragma mark <UICollectionViewDataSource>

@@ -10,7 +10,6 @@
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
 		E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */; };
-		E912863D1E3F4535000E2C43 /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */; };
 		E92226551DF3094900A1B808 /* MenuImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* MenuImageButton.m */; };
 		E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */; };
 		E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66331E2C788000A759BB /* LostAndFoundCollectionViewController.m */; };
@@ -55,7 +54,6 @@
 		E9FB56021E388C5F00C43D39 /* ParcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FE1E388C5F00C43D39 /* ParcelModel.m */; };
 		E9FB56081E388C6800C43D39 /* UIView+IBExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB56051E388C6800C43D39 /* UIView+IBExtention.m */; };
 		E9FB56091E388C6800C43D39 /* UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB56071E388C6800C43D39 /* UIViewExtension.m */; };
-		E9FB560B1E38988300C43D39 /* LostAndFoundCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9FB560A1E38988300C43D39 /* LostAndFoundCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +81,6 @@
 		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor+decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+decorationColor.h"; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+decorationColor.m"; sourceTree = "<group>"; };
-		E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* MenuImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuImageButton.h; sourceTree = "<group>"; };
 		E92226541DF3094900A1B808 /* MenuImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuImageButton.m; sourceTree = "<group>"; };
 		E92E662F1E2C77F600A759BB /* LostAndFoundCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LostAndFoundCollectionViewLayout.h; sourceTree = "<group>"; };
@@ -162,7 +159,6 @@
 		E9FB56051E388C6800C43D39 /* UIView+IBExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBExtention.m"; sourceTree = "<group>"; };
 		E9FB56061E388C6800C43D39 /* UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtension.h; sourceTree = "<group>"; };
 		E9FB56071E388C6800C43D39 /* UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtension.m; sourceTree = "<group>"; };
-		E9FB560A1E38988300C43D39 /* LostAndFoundCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LostAndFoundCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +263,6 @@
 				E92E66461E2C88FE00A759BB /* LostAndFoundCheckinViewController.h */,
 				E92E66471E2C88FE00A759BB /* LostAndFoundCheckinViewController.m */,
 				E92E66491E2C892D00A759BB /* LostAndFoundCheckinViewController.xib */,
-				E9FB560A1E38988300C43D39 /* LostAndFoundCollectionViewController.xib */,
 			);
 			path = LostAndFound;
 			sourceTree = "<group>";
@@ -309,7 +304,6 @@
 			children = (
 				E942A8401DF45A18001EEC19 /* MenuViewController.h */,
 				E942A8411DF45A18001EEC19 /* MenuViewController.m */,
-				E912863C1E3F4535000E2C43 /* MenuViewController.storyboard */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -579,8 +573,6 @@
 				E92E664A1E2C892D00A759BB /* LostAndFoundCheckinViewController.xib in Resources */,
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */,
-				E912863D1E3F4535000E2C43 /* MenuViewController.storyboard in Resources */,
-				E9FB560B1E38988300C43D39 /* LostAndFoundCollectionViewController.xib in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
 				E9B609B61E41ECE0006AE161 /* LoginViewController.xib in Resources */,
 				E9B609B01E41E917006AE161 /* ConsumptionTableViewCell.xib in Resources */,

@@ -19,17 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Cmn-eu-EDd">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                </imageView>
-                <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERf-Qo-d70">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="V3m-uM-pIx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    </view>
-                    <blurEffect style="dark"/>
-                </visualEffectView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAM-ue-kC8" customClass="IBButtonExtension">
                     <rect key="frame" x="28" y="68" width="264" height="385"/>
                     <subviews>
@@ -212,27 +201,16 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.26778403821749319" green="0.26518419318625536" blue="0.27038388324873097" alpha="0.27774507705479451" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Cmn-eu-EDd" secondAttribute="trailing" id="0yB-LP-E0J"/>
-                <constraint firstItem="ERf-Qo-d70" firstAttribute="leading" secondItem="WHR-Cb-Yox" secondAttribute="leading" id="3B3-XR-aEv"/>
-                <constraint firstAttribute="trailing" secondItem="ERf-Qo-d70" secondAttribute="trailing" id="9M0-i0-bDc"/>
-                <constraint firstAttribute="bottom" secondItem="Cmn-eu-EDd" secondAttribute="bottom" id="GrB-Kt-xPN"/>
                 <constraint firstAttribute="bottom" secondItem="dAM-ue-kC8" secondAttribute="bottom" constant="115" id="QVi-SN-rXA"/>
-                <constraint firstItem="Cmn-eu-EDd" firstAttribute="leading" secondItem="WHR-Cb-Yox" secondAttribute="leading" id="RdM-BO-Boq"/>
-                <constraint firstItem="Cmn-eu-EDd" firstAttribute="top" secondItem="WHR-Cb-Yox" secondAttribute="top" id="RnJ-tz-zpy"/>
                 <constraint firstItem="dAM-ue-kC8" firstAttribute="leading" secondItem="WHR-Cb-Yox" secondAttribute="leading" constant="28" id="U0m-Nf-WII"/>
                 <constraint firstAttribute="bottom" secondItem="sc5-vG-uEC" secondAttribute="bottom" constant="65" id="YUR-12-MZ2"/>
                 <constraint firstAttribute="trailing" secondItem="dAM-ue-kC8" secondAttribute="trailing" constant="28" id="ajL-P2-i2d"/>
                 <constraint firstAttribute="trailing" secondItem="sc5-vG-uEC" secondAttribute="trailing" constant="-20" id="c5r-zc-Rcb"/>
                 <constraint firstItem="dAM-ue-kC8" firstAttribute="top" secondItem="WHR-Cb-Yox" secondAttribute="top" constant="68" id="gpu-jT-Ajw"/>
-                <constraint firstItem="ERf-Qo-d70" firstAttribute="top" secondItem="WHR-Cb-Yox" secondAttribute="top" id="ktg-6S-7f4"/>
-                <constraint firstAttribute="bottom" secondItem="ERf-Qo-d70" secondAttribute="bottom" id="vAB-tf-jr5"/>
             </constraints>
             <point key="canvasLocation" x="-581" y="16"/>
         </view>
     </objects>
-    <resources>
-        <image name="back" width="640" height="1138"/>
-    </resources>
 </document>

@@ -30,10 +30,13 @@
     // Do any additional setup after loading the view.
 }
 
+
 #pragma mark Action
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:true];
 }
+
+#pragma mark lazy load
 
 
 @end

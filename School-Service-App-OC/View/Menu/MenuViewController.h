@@ -9,4 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuViewController : UIViewController
+@property(nonatomic,strong)UIView *backView;
 @end
