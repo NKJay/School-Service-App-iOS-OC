@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PickerTextFieldAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+@interface PickerTextFieldAnimation : NSObject<UIViewControllerAnimatedTransitioning,UIViewControllerTransitioningDelegate>
 
 @end

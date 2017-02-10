@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerTextFieldViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4r-GO-ZtZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <barButtonItem title="取消" id="ldw-Wh-8I2">
+                            <connections>
+                                <action selector="cancel:" destination="-1" id="jHp-3R-Xza"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="yHZ-aG-L6Z"/>
+                        <barButtonItem title="确认" id="6bW-k5-jZo">
+                            <connections>
+                                <action selector="confirm:" destination="-1" id="pxk-6z-upZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-sS-6j3">
+                    <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="508388558.21095902">
+                        <!--2017-02-10 03:02:38 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QhE-sS-6j3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4jR-RM-Hhj"/>
+                <constraint firstAttribute="bottom" secondItem="QhE-sS-6j3" secondAttribute="bottom" id="GjI-6E-PcJ"/>
+                <constraint firstAttribute="trailing" secondItem="W4r-GO-ZtZ" secondAttribute="trailing" id="I4D-PF-BZQ"/>
+                <constraint firstAttribute="trailing" secondItem="QhE-sS-6j3" secondAttribute="trailing" id="WkM-16-YXp"/>
+                <constraint firstItem="QhE-sS-6j3" firstAttribute="top" secondItem="W4r-GO-ZtZ" secondAttribute="bottom" id="bnx-Pi-EtZ"/>
+                <constraint firstItem="W4r-GO-ZtZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ozA-54-ClH"/>
+                <constraint firstItem="W4r-GO-ZtZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p9a-Ow-x0N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="29.5" y="257"/>
+        </view>
+    </objects>
+</document>

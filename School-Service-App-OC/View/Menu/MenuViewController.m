@@ -17,12 +17,15 @@
 #import "RegisterViewController.h"
 #import "RepairViewController.h"
 #import "ParcelViewController.h"
+#import "PickerTextFieldAnimation.h"
+#import "PickerTextFieldViewController.h"
 
 @interface MenuViewController ()
 @property(nonatomic,strong)MenuImageButton *parcelButton,*searchButton,*lostAndFoundButton,*consumptionButton;
 @property(nonatomic,strong)MenuImageButton *repairButton,*eventButton;
 @property(nonatomic,strong)UIButton *personalButton;
 @property(nonatomic,strong)UILabel *nameLabel,*balanceLabel;
+@property(nonatomic,strong)PickerTextFieldAnimation *transitionDelegate;
 @end
 
 @implementation MenuViewController
@@ -59,7 +62,19 @@
 }
 
 - (void)toParcelView:(id)sender {
-    [self.navigationController pushViewController:[[ParcelViewController alloc] init] animated:true];
+//    [self.navigationController pushViewController:[[ParcelViewController alloc] init] animated:true];
+    UIViewController *vc = [[PickerTextFieldViewController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    vc.transitioningDelegate = self.transitioningDelegate;
+    NSLog(@"%@",self.transitioningDelegate);
+    [self presentViewController:vc animated:true completion:nil];
+}
+
+- (PickerTextFieldAnimation *)transitioningDelegate{
+    if (!_transitionDelegate) {
+        _transitionDelegate = [[PickerTextFieldAnimation alloc] init];
+    }
+    return _transitionDelegate;
 }
 
 - (void)close{
