@@ -9,11 +9,7 @@
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
-		E90FA3B61E4ED77300E3B791 /* TextFieldPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */; };
-		E9115A0A1E4D644C003BF2C1 /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9115A071E4D644C003BF2C1 /* PickerTextFieldAnimation.m */; };
-		E9115A0F1E4D6477003BF2C1 /* PickerTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9115A0D1E4D6477003BF2C1 /* PickerTextFieldViewController.m */; };
-		E9115A101E4D6477003BF2C1 /* PickerTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9115A0E1E4D6477003BF2C1 /* PickerTextFieldViewController.xib */; };
-		E9115A131E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9115A121E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m */; };
+		E90FA3B91E4EF34400E3B791 /* PickerViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3B81E4EF34400E3B791 /* PickerViewTextField.m */; };
 		E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */; };
 		E92226551DF3094900A1B808 /* MenuImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E92226541DF3094900A1B808 /* MenuImageButton.m */; };
 		E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E92E66301E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m */; };
@@ -37,7 +33,6 @@
 		E9B609AF1E41E917006AE161 /* ConsumptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B609AD1E41E917006AE161 /* ConsumptionTableViewCell.m */; };
 		E9B609B01E41E917006AE161 /* ConsumptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609AE1E41E917006AE161 /* ConsumptionTableViewCell.xib */; };
 		E9B609B51E41ECE0006AE161 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B609B31E41ECE0006AE161 /* LoginViewController.m */; };
-		E9B609B61E41ECE0006AE161 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609B41E41ECE0006AE161 /* LoginViewController.xib */; };
 		E9B609B81E41F02D006AE161 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9B609B71E41F02D006AE161 /* NewsTableViewCell.xib */; };
 		E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */; };
 		E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D173B41E321DA60095DE7C /* PersonalInformationViewController.xib */; };
@@ -55,8 +50,6 @@
 		E9FB56001E388C5F00C43D39 /* LostAndFoundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FA1E388C5F00C43D39 /* LostAndFoundModel.m */; };
 		E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FC1E388C5F00C43D39 /* NewsModel.m */; };
 		E9FB56021E388C5F00C43D39 /* ParcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB55FE1E388C5F00C43D39 /* ParcelModel.m */; };
-		E9FB56081E388C6800C43D39 /* UIView+IBExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB56051E388C6800C43D39 /* UIView+IBExtention.m */; };
-		E9FB56091E388C6800C43D39 /* UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FB56071E388C6800C43D39 /* UIViewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,15 +75,8 @@
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E90877F61DF50B4400BA4CEA /* SearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
 		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
-		E90FA3B41E4ED77300E3B791 /* TextFieldPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerView.h; sourceTree = "<group>"; };
-		E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerView.m; sourceTree = "<group>"; };
-		E9115A061E4D644C003BF2C1 /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
-		E9115A071E4D644C003BF2C1 /* PickerTextFieldAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldAnimation.m; sourceTree = "<group>"; };
-		E9115A0C1E4D6477003BF2C1 /* PickerTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldViewController.h; sourceTree = "<group>"; };
-		E9115A0D1E4D6477003BF2C1 /* PickerTextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldViewController.m; sourceTree = "<group>"; };
-		E9115A0E1E4D6477003BF2C1 /* PickerTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerTextFieldViewController.xib; sourceTree = "<group>"; };
-		E9115A111E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldUIPresentationController.h; sourceTree = "<group>"; };
-		E9115A121E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldUIPresentationController.m; sourceTree = "<group>"; };
+		E90FA3B71E4EF34400E3B791 /* PickerViewTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewTextField.h; sourceTree = "<group>"; };
+		E90FA3B81E4EF34400E3B791 /* PickerViewTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewTextField.m; sourceTree = "<group>"; };
 		E911E16A1DEEF3ED008A1A05 /* UIColor+decorationColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+decorationColor.h"; sourceTree = "<group>"; };
 		E911E16C1DEEF456008A1A05 /* UIColor+decorationColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+decorationColor.m"; sourceTree = "<group>"; };
 		E92226531DF3094900A1B808 /* MenuImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuImageButton.h; sourceTree = "<group>"; };
@@ -132,7 +118,6 @@
 		E9B609AE1E41E917006AE161 /* ConsumptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsumptionTableViewCell.xib; sourceTree = "<group>"; };
 		E9B609B21E41ECE0006AE161 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E9B609B31E41ECE0006AE161 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		E9B609B41E41ECE0006AE161 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E9B609B71E41F02D006AE161 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		E9D173B21E321DA60095DE7C /* PersonalInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInformationViewController.h; sourceTree = "<group>"; };
 		E9D173B31E321DA60095DE7C /* PersonalInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInformationViewController.m; sourceTree = "<group>"; };
@@ -163,10 +148,6 @@
 		E9FB55FC1E388C5F00C43D39 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		E9FB55FD1E388C5F00C43D39 /* ParcelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParcelModel.h; sourceTree = "<group>"; };
 		E9FB55FE1E388C5F00C43D39 /* ParcelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParcelModel.m; sourceTree = "<group>"; };
-		E9FB56041E388C6800C43D39 /* UIView+IBExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IBExtention.h"; sourceTree = "<group>"; };
-		E9FB56051E388C6800C43D39 /* UIView+IBExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IBExtention.m"; sourceTree = "<group>"; };
-		E9FB56061E388C6800C43D39 /* UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtension.h; sourceTree = "<group>"; };
-		E9FB56071E388C6800C43D39 /* UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,22 +193,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9115A051E4D644C003BF2C1 /* CustomPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				E9115A061E4D644C003BF2C1 /* PickerTextFieldAnimation.h */,
-				E9115A071E4D644C003BF2C1 /* PickerTextFieldAnimation.m */,
-				E9115A0C1E4D6477003BF2C1 /* PickerTextFieldViewController.h */,
-				E9115A0D1E4D6477003BF2C1 /* PickerTextFieldViewController.m */,
-				E9115A0E1E4D6477003BF2C1 /* PickerTextFieldViewController.xib */,
-				E9115A111E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.h */,
-				E9115A121E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m */,
-				E90FA3B41E4ED77300E3B791 /* TextFieldPickerView.h */,
-				E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */,
-			);
-			path = CustomPickerView;
-			sourceTree = "<group>";
-		};
 		E911E1681DEEF2CD008A1A05 /* Catagory */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +222,6 @@
 		E92226521DF3091F00A1B808 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				E9115A051E4D644C003BF2C1 /* CustomPickerView */,
 				E92226531DF3094900A1B808 /* MenuImageButton.h */,
 				E92226541DF3094900A1B808 /* MenuImageButton.m */,
 				E942A85D1DF4F751001EEC19 /* MenuButton.h */,
@@ -268,6 +232,8 @@
 				E9B56D0D1E344DAD00E274BA /* LogoView.m */,
 				E96088121E40915F001DD41A /* CustomTextField.h */,
 				E96088131E40915F001DD41A /* CustomTextField.m */,
+				E90FA3B71E4EF34400E3B791 /* PickerViewTextField.h */,
+				E90FA3B81E4EF34400E3B791 /* PickerViewTextField.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -364,7 +330,6 @@
 			children = (
 				E9B609B21E41ECE0006AE161 /* LoginViewController.h */,
 				E9B609B31E41ECE0006AE161 /* LoginViewController.m */,
-				E9B609B41E41ECE0006AE161 /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -467,10 +432,6 @@
 		E9FB56031E388C6800C43D39 /* IBExtension */ = {
 			isa = PBXGroup;
 			children = (
-				E9FB56041E388C6800C43D39 /* UIView+IBExtention.h */,
-				E9FB56051E388C6800C43D39 /* UIView+IBExtention.m */,
-				E9FB56061E388C6800C43D39 /* UIViewExtension.h */,
-				E9FB56071E388C6800C43D39 /* UIViewExtension.m */,
 			);
 			path = IBExtension;
 			sourceTree = "<group>";
@@ -588,7 +549,6 @@
 				E9D173B61E321DA60095DE7C /* PersonalInformationViewController.xib in Resources */,
 				E9E703E11DEC417900F5C042 /* LaunchScreen.storyboard in Resources */,
 				E96088111E409055001DD41A /* RepairViewController.xib in Resources */,
-				E9115A101E4D6477003BF2C1 /* PickerTextFieldViewController.xib in Resources */,
 				E9B609B81E41F02D006AE161 /* NewsTableViewCell.xib in Resources */,
 				E9E07FA81E3995E700ADD9E0 /* ConsumptionViewController.storyboard in Resources */,
 				E9B56D0B1E3448D800E274BA /* RegisterViewController.xib in Resources */,
@@ -596,7 +556,6 @@
 				E942A8531DF46143001EEC19 /* SettingView.storyboard in Resources */,
 				E9E07FAA1E3996B500ADD9E0 /* ParcelViewController.xib in Resources */,
 				E9E703DE1DEC417900F5C042 /* Assets.xcassets in Resources */,
-				E9B609B61E41ECE0006AE161 /* LoginViewController.xib in Resources */,
 				E9B609B01E41E917006AE161 /* ConsumptionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,10 +636,8 @@
 				E942A85C1DF4F694001EEC19 /* ParcelViewController.m in Sources */,
 				E9FB56011E388C5F00C43D39 /* NewsModel.m in Sources */,
 				E9E3FDC01E28781200F89821 /* ConsumptionViewController.m in Sources */,
-				E9115A0A1E4D644C003BF2C1 /* PickerTextFieldAnimation.m in Sources */,
 				E9B609B51E41ECE0006AE161 /* LoginViewController.m in Sources */,
 				E9D173B51E321DA60095DE7C /* PersonalInformationViewController.m in Sources */,
-				E9115A131E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m in Sources */,
 				E96088141E40915F001DD41A /* CustomTextField.m in Sources */,
 				E92E66481E2C88FE00A759BB /* LostAndFoundCheckinViewController.m in Sources */,
 				E92E66341E2C788000A759BB /* LostAndFoundCollectionViewController.m in Sources */,
@@ -690,20 +647,17 @@
 				E911E16D1DEEF456008A1A05 /* UIColor+decorationColor.m in Sources */,
 				E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */,
 				E9B56D0E1E344DAD00E274BA /* LogoView.m in Sources */,
-				E9FB56091E388C6800C43D39 /* UIViewExtension.m in Sources */,
 				E9B609AF1E41E917006AE161 /* ConsumptionTableViewCell.m in Sources */,
 				E96088101E409055001DD41A /* RepairViewController.m in Sources */,
 				E9FB55FF1E388C5F00C43D39 /* ConsumptionModel.m in Sources */,
+				E90FA3B91E4EF34400E3B791 /* PickerViewTextField.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
-				E90FA3B61E4ED77300E3B791 /* TextFieldPickerView.m in Sources */,
 				E92226551DF3094900A1B808 /* MenuImageButton.m in Sources */,
 				E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
-				E9FB56081E388C6800C43D39 /* UIView+IBExtention.m in Sources */,
 				E942A84C1DF45A44001EEC19 /* SettingViewController.m in Sources */,
 				E92E66311E2C77F600A759BB /* LostAndFoundCollectionViewLayout.m in Sources */,
-				E9115A0F1E4D6477003BF2C1 /* PickerTextFieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
