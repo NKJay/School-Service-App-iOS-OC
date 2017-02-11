@@ -8,20 +8,26 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
-#import "ParcelViewController.h"
-#import "RegisterViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
-
+@property(weak,nonatomic)NSUserDefaults *userDefaults;
 @end
 
 @implementation AppDelegate
 
+- (NSUserDefaults *)userDefaults{
+    if (!_userDefaults) {
+        _userDefaults = [NSUserDefaults standardUserDefaults];
+    }
+    return _userDefaults;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self enterRootView];
+    [self isFirstLaunch];
     [self setupNavBarAppearance];
+    [self enterRootView];
     return YES;
 }
 
@@ -29,19 +35,27 @@
     [UINavigationBar appearance].backgroundColor = [UIColor whiteColor];
     [UINavigationBar appearance].tintColor = [UIColor blackColor];
     [UINavigationBar appearance].translucent = true;
-    
+}
 
+- (void)isFirstLaunch{
+    if(![self.userDefaults boolForKey:@"notFirst"]){
+        [self.userDefaults setBool:true forKey:@"notFirst"];
+        [self.userDefaults setBool:false forKey:@"isLogin"];
+    }
 }
 
 -(void)enterRootView {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    UIViewController *mainViewController = [[UIStoryboard storyboardWithName:@"MainViewController" bundle:nil]
-//                                            instantiateInitialViewController];
     
+    if([self.userDefaults boolForKey:@"isLogin"]){
+        UINavigationController *navigationController = [[UINavigationController alloc]
+                                                        initWithRootViewController:[[MainViewController alloc] init]];
+        self.window.rootViewController = navigationController;
+    } else {
+        LoginViewController *viewController = [[LoginViewController alloc] init];
+        self.window.rootViewController = viewController;
+    }
 
-    UINavigationController *navigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:[[MainViewController alloc] init]];
-    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
 }
 

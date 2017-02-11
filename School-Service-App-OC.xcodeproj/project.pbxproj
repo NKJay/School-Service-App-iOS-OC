@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D351AA033E90887D83FD1B2E /* Pods_School_Service_App_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C0C50F4E9CE89F98DF7F7C /* Pods_School_Service_App_OC.framework */; };
 		E90877F81DF50B4400BA4CEA /* SearchTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E90877F71DF50B4400BA4CEA /* SearchTextField.m */; };
+		E90FA3B61E4ED77300E3B791 /* TextFieldPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */; };
 		E9115A0A1E4D644C003BF2C1 /* PickerTextFieldAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E9115A071E4D644C003BF2C1 /* PickerTextFieldAnimation.m */; };
 		E9115A0F1E4D6477003BF2C1 /* PickerTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9115A0D1E4D6477003BF2C1 /* PickerTextFieldViewController.m */; };
 		E9115A101E4D6477003BF2C1 /* PickerTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9115A0E1E4D6477003BF2C1 /* PickerTextFieldViewController.xib */; };
@@ -81,6 +82,8 @@
 		9D49D79A05791A3F90866320 /* Pods-School-Service-App-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-School-Service-App-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-School-Service-App-OC/Pods-School-Service-App-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		E90877F61DF50B4400BA4CEA /* SearchTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTextField.h; sourceTree = "<group>"; };
 		E90877F71DF50B4400BA4CEA /* SearchTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTextField.m; sourceTree = "<group>"; };
+		E90FA3B41E4ED77300E3B791 /* TextFieldPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldPickerView.h; sourceTree = "<group>"; };
+		E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldPickerView.m; sourceTree = "<group>"; };
 		E9115A061E4D644C003BF2C1 /* PickerTextFieldAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldAnimation.h; sourceTree = "<group>"; };
 		E9115A071E4D644C003BF2C1 /* PickerTextFieldAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerTextFieldAnimation.m; sourceTree = "<group>"; };
 		E9115A0C1E4D6477003BF2C1 /* PickerTextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerTextFieldViewController.h; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				E9115A0E1E4D6477003BF2C1 /* PickerTextFieldViewController.xib */,
 				E9115A111E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.h */,
 				E9115A121E4D65D1003BF2C1 /* PickerTextFieldUIPresentationController.m */,
+				E90FA3B41E4ED77300E3B791 /* TextFieldPickerView.h */,
+				E90FA3B51E4ED77300E3B791 /* TextFieldPickerView.m */,
 			);
 			path = CustomPickerView;
 			sourceTree = "<group>";
@@ -691,6 +696,7 @@
 				E9FB55FF1E388C5F00C43D39 /* ConsumptionModel.m in Sources */,
 				E942A8471DF45A19001EEC19 /* MenuViewController.m in Sources */,
 				E92E66391E2C7B5C00A759BB /* LostAndFoundCollectionViewCell.m in Sources */,
+				E90FA3B61E4ED77300E3B791 /* TextFieldPickerView.m in Sources */,
 				E92226551DF3094900A1B808 /* MenuImageButton.m in Sources */,
 				E9B56D0A1E3448D800E274BA /* RegisterViewController.m in Sources */,
 				E942A8581DF4894F001EEC19 /* NewsTableViewCell.m in Sources */,
